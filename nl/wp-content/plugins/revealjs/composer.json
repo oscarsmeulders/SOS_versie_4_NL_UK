@@ -1,0 +1,7 @@
+{
+    "name": "xim/revealjs",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "*"
+    }
+}

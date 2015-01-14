@@ -1,0 +1,132 @@
+/*
+	////////////////////////////////////////////////////////////////
+*/
+// background color for body, also used in the overview
+$body-bg:							#d9267a;
+
+// global color for the top navigation, contrast with $body-bg
+$nav-color-txt:						#fff;
+$nav-color-txt-hover:				#fcb908;
+
+// color for the navigation backgronds
+// the arrows are done with a extend
+// include this in the class if the arrow should be white
+// @extend %home-navigation-white;
+// 'lees verder' can have a different color
+$home-color-nav:					#fcb908;
+$home-color-nav-hover:				#08a1da;
+$home-color-nav-down:				$home-color-nav;
+$home-color-nav-down-hover:			$home-color-nav-hover;
+
+// heading color + text color + image of first page
+// relative to in public folder, can be changed online
+// sub means the second heading, sub heading
+$home-color-heading-bg:				#08a1da;
+$home-color-heading-txt:			#FFF;
+$home-color-heading-sub-txt:		#FFF;
+$home-bg-img:						'/nl/wp-content/uploads/2samen-home.jpg';
+
+// color for the overview thumb, the present one and the text
+$thumb-color-txt:					#000;
+$thumb-color-bg:					#fcb908;
+$thumb-color-bg-present:			lighten($thumb-color-bg, 20);
+
+// colors of the content pages
+$content-color-txt:					#000;
+$content-color-heading-txt:			$body-bg;
+$content-color-heading-sub-txt:		#08a1da;
+$content-color-bg:					#fff;
+
+$content-link-bg:					#7ba420;
+$content-link-txt:					#fff;
+$content-list-txt-hover:			#000;
+
+$content-list-bg:					lighten($content-color-bg, 2);
+$content-list-bg-hover:				lighten($content-color-bg, 5);
+$content-list-txt-hover:			#fff;
+
+// in the flip a heading (video)?
+// $flip-color-txt == heading txt
+// $flip-color-bg == flip background
+$flip-color-txt:					#fff;
+$flip-color-bg:						$content-color-bg;
+
+// $flip-color-slideshow-txt == color of description
+// $flip-color-slideshow-bg == color of background
+$flip-color-slideshow-txt:			#000;
+$flip-color-slideshow-bg:			#FFF;
+
+// button too call the flip
+// @extend %flip-icons-white if you wnat the icon white
+$flip-color-bt:						#d8468d;
+$flip-color-bt-hover:				darken($flip-color-bt, 10);
+
+// in the flip the 'close' / 'go back' button
+// for white close button
+// @extend %flip-close-icon-white
+$flip-color-bt-close:				#d8468d;
+$flip-color-bt-close-hover:			darken($flip-color-bt-close, 10);
+/*
+	////////////////////////////////////////////////////////////////
+*/
+.samen-theme {
+	@include theme-options;
+	@extend %home-navigation-white;
+	@extend %list-navigation-white;
+	@extend %flip-bt-icons-white;
+	@extend %flip-close-icon-white;
+	#hog-vormentaal {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/houseofgreen-vormentaal.jpg');
+		}
+	}
+	#hog-tuinObject {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/hog-tuinobject.jpg');
+		}
+	}
+	#hog-tuinObject-night {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/houseofgreen_slide_1.jpg');
+		}
+	}
+	#hog-etalage {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/houseofgreen_slide_3.jpg');
+		}
+	}
+	#hog-website-1 {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/hog-website-1.jpg');
+		}
+	}
+	#hog-website-2 {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/hog-website-2.jpg');
+		}
+	}
+	#hog-webshop-1 {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/hog-webshop-1.jpg');
+		}
+	}
+	#hog-webshop-2 {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/hog-webshop-2.jpg');
+		}
+	}
+}
+
+
+.reveal.overview section[data-state *= 'samen-theme'] .thumb {
+	background: $thumb-color-bg;
+	h2 {
+		color: $thumb-color-txt;
+	}
+}
+.reveal.overview section[data-state *= 'samen-theme'].present  {
+	background: $thumb-color-bg-present;
+}
+/*
+	////////////////////////////////////////////////////////////////
+*/

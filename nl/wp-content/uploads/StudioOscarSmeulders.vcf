@@ -1,0 +1,20 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.10.1//EN
+N:;;;;
+FN:Studio Oscar Smeulders
+ORG:Studio Oscar Smeulders;
+EMAIL;type=INTERNET;type=WORK;type=pref:info@oscarsmeulders.com
+item1.TEL;type=pref:+31 6 215 70 942
+item1.X-ABLabel:Mobile
+item2.ADR;type=pref:;;Neogotiekhof 23;Nootdorp;;2632DJ;Netherlands
+item2.X-ABLabel:post
+ADR;type=WORK:;;Zwaardstraat 16;Den Haag;;2584 TX;Netherlands
+item3.URL;type=pref:http://www.oscarsmeulders.com
+item3.X-ABLabel:Home Page
+X-ABShowAs:COMPANY
+UID:C62399DA-2D07-45B3-99E8-FAB8EEAEB823
+X-ABUID:9A02AF31-5D15-4CAC-BF84-5F8DC3D470F7:ABPerson
+X-DAYLITELASTMOD:20150107T153059Z
+X-DAYLITEUUID:Organization:55E9D629-9127-41DC-A709-C58C61323A85:2000
+END:VCARD

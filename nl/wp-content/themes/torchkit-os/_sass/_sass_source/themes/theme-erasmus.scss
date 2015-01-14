@@ -1,0 +1,100 @@
+/*
+	////////////////////////////////////////////////////////////////
+*/
+// background color for body, also used in the overview
+// #b7b1b1
+$body-bg:							#8fd2ed;
+
+// global color for the top navigation, contrast with $body-bg
+$nav-color-txt:						#0c2074;
+$nav-color-txt-hover:				darken($nav-color-txt, 10);
+
+// color for the navigation backgronds
+// the arrows are done with a extend
+// include this in the class if the arrow should be white
+// @extend %home-navigation-white;
+// 'lees verder' can have a different color
+$home-color-nav:					darken(#8fd2ed, 20);
+$home-color-nav-hover:				darken($home-color-nav, 10);
+$home-color-nav-down:				$home-color-nav;
+$home-color-nav-down-hover:			darken($home-color-nav-down, 10);
+
+// heading color + text color + image of first page
+// relative to in public folder, can be changed online
+// sub means the second heading, sub heading
+$home-color-heading-bg:				#0c2074;
+$home-color-heading-txt:			#FFF;
+$home-color-heading-sub-txt:		#FFF;
+$home-bg-img:						'/nl/wp-content/uploads/erasmus-zorgpaden-home.jpg';
+
+// color for the overview thumb, the present one and the text
+$thumb-color-txt:					#fff;
+$thumb-color-bg:					#0c2074;
+$thumb-color-bg-present:			lighten($thumb-color-bg, 20);
+
+// colors of the content pages
+$content-color-txt:					$home-color-heading-txt;
+$content-color-heading-txt:			$home-color-heading-txt;
+$content-color-heading-sub-txt:		$home-color-nav-hover;
+$content-color-bg:					$home-color-heading-bg;
+
+$content-link-bg:					lighten($home-color-nav, 20);
+$content-link-txt:					#fff;
+
+$content-list-bg:					lighten($home-color-nav-hover, 19);
+$content-list-bg-hover:				lighten($home-color-nav-hover, 17);
+$content-list-txt-hover:			#fff;
+
+// in the flip a heading (video)?
+// $flip-color-txt == heading txt
+// $flip-color-bg == flip background
+$flip-color-txt:					#fff;
+$flip-color-bg:						$content-color-bg;
+
+// $flip-color-slideshow-txt == color of description
+// $flip-color-slideshow-bg == color of background
+$flip-color-slideshow-txt:			#000;
+$flip-color-slideshow-bg:			#FFF;
+
+// button too call the flip
+// @extend %flip-icons-white if you wnat the icon white
+$flip-color-bt:						#d8468d;
+$flip-color-bt-hover:				darken($flip-color-bt, 10);
+
+// in the flip the 'close' / 'go back' button
+// for white close button
+// @extend %flip-close-icon-white
+$flip-color-bt-close:				#d8468d;
+$flip-color-bt-close-hover:			darken($flip-color-bt-close, 10);
+/*
+	////////////////////////////////////////////////////////////////
+*/
+.erasmus-theme {
+	@include theme-options;
+	@extend %home-navigation-white;
+	@extend %list-navigation-white;
+	@extend %flip-bt-icons-white;
+	@extend %flip-close-icon-white;
+	#website-zorgpad {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/erasmus-zorgpaden-example.jpg');
+		}
+	}
+}
+
+.erasmus-theme.content-bg-txt-bottom h5 {
+	color: $home-color-heading-bg;
+}
+
+.reveal.overview section[data-state *= 'erasmus-theme'] .thumb {
+	background: $thumb-color-bg;
+	h2 {
+		color: $thumb-color-txt;
+	}
+}
+.reveal.overview section[data-state *= 'erasmus-theme'].present  {
+	background: $thumb-color-bg-present;
+}
+/*
+	////////////////////////////////////////////////////////////////
+*/

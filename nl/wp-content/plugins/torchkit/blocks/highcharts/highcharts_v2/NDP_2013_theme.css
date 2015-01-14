@@ -1,0 +1,61 @@
+.NDP_graphs {
+	background: #776d74;
+	font-family: 'Verdana', 'Calibri','calibri','Lucida Grande','Lucida Sans Unicode', 'Arial','Helvetica','sans-serif';
+	font-size: 11px;
+	min-width: 910px; width: 910px;
+	min-height: 545px; height: 545px;
+}
+.header {
+	float: right;
+	display: block;
+	color:#FFFFFF;
+	padding-right: 10px;
+}
+.NDP_graphs h2#title {
+	padding-top: 10px;
+	padding-left: 10px;
+	color: #FFF;
+	font-size: 18px;
+}
+.NDP_graphs #buttons {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+.NDP_graphs #buttons.buttonsBottom {
+	margin-top: 70px;
+}
+.NDP_graphs button {
+	min-width: 283px;
+	height:40px;
+	padding: 10px;
+	margin-left: 13px;
+	border: 0px solid #fff;
+	background: #fff;
+	color: #fff;
+	display: block;
+	float:left;
+}
+.NDP_graphs button:hover {
+	cursor: pointer;
+}
+.NDP_graphs.i31 button, .NDP_graphs.s31 button {
+	min-width: 210px;
+}
+
+.NDP_graphs .buttonA {
+	background: #d16800;
+}
+.NDP_graphs .buttonB {
+	background: #a5bce4;
+}
+.NDP_graphs .buttonC {
+	background: #241f64;
+}
+.NDP_graphs button.hide {
+	background: #5d555b;
+}
+.NDP_graphs .extra {
+	padding-left: 10px;
+	float: right;
+}

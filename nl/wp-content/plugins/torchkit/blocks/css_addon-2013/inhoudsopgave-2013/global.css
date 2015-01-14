@@ -1,0 +1,31 @@
+.inhoudsopgave li, .decompos li {
+	list-style-type: none;
+	padding-left: 12px;
+
+}
+
+.inhoudsopgave .block, .decompos .block {
+	background: url(images/ulBlock.jpg) left center no-repeat;
+}
+.inhoudsopgave a,.inhoudsopgave a:link,.inhoudsopgave a:visited,.inhoudsopgave a:hover,.inhoudsopgave a:focus,.inhoudsopgave a:active,
+.inhoudsopgave a span,.inhoudsopgave a:link span,.inhoudsopgave a:visited span,.inhoudsopgave a:hover span,.inhoudsopgave a:focus span,.inhoudsopgave a:active span,
+.decompos a,.decompos a:link,.decompos a:visited,.decompos a:hover,.decompos a:focus,.decompos a:active,
+.decompos a span,.decompos a:link span,.decompos a:visited span,.decompos a:hover span,.decompos a:focus span,.decompos a:active span {
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+}
+.inhoudsopgave a:hover, .inhoudsopgave a:hover span {
+	text-decoration: underline;
+}
+
+.slides .home .inhoudsopgave {
+ font-size: 17px; color: #E36B2D; text-decoration: none; position: absolute; bottom: 80px; left: 80px; line-height: 1;
+}
+.slides .home .decompos {
+ font-size: 17px; color: #E36B2D; text-decoration: none; position: absolute; bottom: 50px; left: 80px; line-height: 1;
+}
+
+.slides .home .inhoudsopgave:before, .slides .home .decompos:before {
+ content: ' '; display: inline-block; margin-right: 5px; width: 10px; height: 10px; background: #E36B2D; vertical-align: baseline;
+}

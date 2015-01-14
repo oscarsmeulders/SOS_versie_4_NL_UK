@@ -1,0 +1,7 @@
+{
+    "name": "xim/torchkit",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "*"
+    }
+}

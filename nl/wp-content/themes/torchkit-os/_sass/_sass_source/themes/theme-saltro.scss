@@ -1,0 +1,90 @@
+/*
+	////////////////////////////////////////////////////////////////
+*/
+// background color for body, also used in the overview
+$body-bg:							#fff;
+
+// global color for the top navigation, contrast with $body-bg
+$nav-color-txt:						#057ABF;
+$nav-color-txt-hover:				#dd993e;
+
+// color for the navigation backgronds
+// the arrows are done with a extend
+// include this in the class if the arrow should be white
+// @extend %home-navigation-white;
+// 'lees verder' can have a different color
+$home-color-nav:					#dd993e;
+$home-color-nav-hover:				darken($home-color-nav, 10);
+$home-color-nav-down:				$home-color-nav;
+$home-color-nav-down-hover:			darken($home-color-nav-down, 10);
+
+// heading color + text color + image of first page
+// relative to in public folder, can be changed online
+// sub means the second heading, sub heading
+$home-color-heading-bg:				$home-color-nav;
+$home-color-heading-txt:			#FFF;
+$home-color-heading-sub-txt:		#FFF;
+$home-bg-img:						'/nl/wp-content/uploads/saltro-home.jpg';
+
+// color for the overview thumb, the present one and the text
+$thumb-color-txt:					#fff;
+$thumb-color-bg:					$nav-color-txt;
+$thumb-color-bg-present:			lighten($thumb-color-bg, 20);
+
+// colors of the content pages
+$content-color-txt:					#fff;
+$content-color-heading-txt:			#fff;
+$content-color-heading-sub-txt:		$home-color-heading-bg;
+$content-color-bg:					#007bbf;
+
+$content-link-bg:					$home-color-heading-bg;
+$content-link-txt:					#fff;
+
+$content-list-bg:					lighten($content-color-bg, 2);
+$content-list-bg-hover:				lighten($content-color-bg, 5);
+$content-list-txt-hover:			#000;
+
+// in the flip a heading (video)?
+// $flip-color-txt == heading txt
+// $flip-color-bg == flip background
+$flip-color-txt:					#fff;
+$flip-color-bg:						$nav-color-txt;
+
+// $flip-color-slideshow-txt == color of description
+// $flip-color-slideshow-bg == color of background
+$flip-color-slideshow-txt:			#000;
+$flip-color-slideshow-bg:			#FFF;
+
+// button too call the flip
+// @extend %flip-icons-white if you wnat the icon white
+$flip-color-bt:						$home-color-nav;
+$flip-color-bt-hover:				darken($flip-color-bt, 10);
+
+// in the flip the 'close' / 'go back' button
+// for white close button
+// @extend %flip-close-icon-white
+$flip-color-bt-close:				$home-color-nav;
+$flip-color-bt-close-hover:			darken($flip-color-bt-close, 10);
+/*
+	////////////////////////////////////////////////////////////////
+*/
+.saltro-theme {
+	@include theme-options;
+	@extend %home-navigation-white;
+	@extend %flip-bt-icons-white;
+	@extend %flip-close-icon-white;
+}
+
+
+.reveal.overview section[data-state *= 'saltro-theme'] .thumb {
+	background: $thumb-color-bg;
+	h2 {
+		color: $thumb-color-txt;
+	}
+}
+.reveal.overview section[data-state *= 'saltro-theme'].present  {
+	background: $thumb-color-bg-present;
+}
+/*
+	////////////////////////////////////////////////////////////////
+*/

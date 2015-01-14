@@ -1,0 +1,11 @@
+{
+    "require": {
+    },
+    "autoload": {
+        "psr-0": {
+            "TorchKit": "nl/wp-content/plugins/torchkit/src/",
+            "TorchKit\\Admin": "nl/wp-content/plugins/torchkit-admin/src/",
+            "RevealJS": "nl/wp-content/plugins/revealjs/src/"
+        }
+    }
+}

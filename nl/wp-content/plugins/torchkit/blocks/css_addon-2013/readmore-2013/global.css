@@ -1,0 +1,10 @@
+.leesverder {
+	display:table;
+	padding-top: 10px;
+	padding-left: 17px;
+	background: url(images/arrow.png) left 10px no-repeat;
+
+}
+.leesverder:hover {
+	background: url(images/arrowHover.png) left 10px no-repeat;
+}

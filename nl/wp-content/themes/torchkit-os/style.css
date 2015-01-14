@@ -1,0 +1,13 @@
+/*
+Theme Name: Torchkit - SOS 2015
+Theme URI: http://ximsystems.nl
+Author: Oscar Smeulders
+Author URI: oscarsmeulders.com
+Template: torchkit
+Description: Styling for oscarsmeulders.com
+Version: 1.A
+*/
+
+@import url("../torchkit/style.css");
+@import url("./css/styles.css");
+
