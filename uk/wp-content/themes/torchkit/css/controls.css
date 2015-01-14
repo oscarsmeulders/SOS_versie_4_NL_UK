@@ -1,0 +1,152 @@
+/*********************************************
+ * CONTROLS
+ *********************************************/
+/*Hide original controls*/
+aside.controls {
+	display:none!important;
+}
+
+
+
+
+.reveal .control {
+    position: absolute;
+    border: 0 solid #6D6362;
+    /* border-bottom-width: 5px; */
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    background-color: #D25006;
+    background-repeat:no-repeat;
+    z-index: 5;
+    -webkit-transition: border-width 0.3s, opacity 0.2s;
+    -moz-transition: border-width 0.3s, opacity 0.2s;
+    transition: border-width 0.3s, opacity 0.2s;
+    opacity:0;
+}
+.reveal .future  > .control, .reveal .past > .control {
+    z-index: 1;
+    display:none;
+}
+.reveal .present > .control {
+    z-index: 2;
+}
+.reveal .present > .control.enabled {
+    opacity:1;
+    cursor: pointer;
+    visibility:visible;
+    display:block;
+}
+.reveal.overview .control.enabled {
+    opacity:0;
+}
+
+.reveal .control.enabled:hover {
+    /* border-bottom-width:10px; */
+}
+.reveal .control.enabled:active {
+    border-bottom-width:0;
+}
+
+.reveal .control.navigate-left {
+/*
+    bottom: 50%;
+    margin-top: -25px;
+    left: -25px;
+*/
+}
+
+.reveal .control.navigate-right {
+/*
+    bottom: 50%;
+    margin-top: -25px;
+    right: -25px;
+*/
+}
+
+.reveal .control.navigate-up {
+/*
+    left: 50%;
+    margin-left: -25px;
+    bottom: 100%;
+    margin-bottom: -25px;
+*/
+}
+
+.reveal .control.navigate-down {
+/*
+    left: 50%;
+    margin-left: -25px;
+    bottom: -25px;
+*/
+}
+
+/*
+@media (max-width: 960px) {
+    .reveal .control.navigate-left {
+        left: 0;
+    }
+    .reveal .control.navigate-right {
+        right: 0;
+    }
+}
+@media (max-height: 600px) {
+    .reveal .control.navigate-up {
+        margin-bottom: -40px;
+    }
+    .reveal .control.navigate-down {
+        bottom: -0;
+    }
+}
+html.touch .control {
+    display:none;
+}*/
+
+/* Some arrows */
+.control:before {
+/*
+    content: '';
+    position: absolute;
+    border: 12px solid transparent;
+*/
+}
+.navigate-up:before, .navigate-down:before {
+/*
+    border-right-width: 7.5px;
+    border-left-width: 7.5px;
+*/
+}
+.navigate-right:before, .navigate-left:before {
+/*
+    border-top-width: 7.5px;
+    border-bottom-width: 7.5px;
+*/
+}
+.navigate-up:before{
+/*
+    border-bottom-color: #fff;
+    top:1px;
+    left:13px;
+*/
+}
+.navigate-right:before{
+/*
+    border-left-color: #fff;
+    top:13px;
+    left:15px;
+*/
+}
+.navigate-down:before{
+/*
+    border-top-color: #fff;
+    top:15px;
+    left:13px;
+*/
+}
+.navigate-left:before{
+/*
+    border-right-color: #fff;
+    top:13px;
+    left:1px;
+*/
+}

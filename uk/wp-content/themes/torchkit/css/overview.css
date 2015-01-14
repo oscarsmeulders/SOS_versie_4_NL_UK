@@ -1,0 +1,60 @@
+/*********************************************
+ * OVERVIEW
+ *********************************************/
+
+.reveal.overview .slides {
+    -webkit-perspective-origin: 0% 0%;
+       -moz-perspective-origin: 0% 0%;
+        -ms-perspective-origin: 0% 0%;
+            perspective-origin: 0% 0%;
+
+    -webkit-perspective: 700px;
+       -moz-perspective: 700px;
+        -ms-perspective: 700px;
+            perspective: 700px;
+}
+
+.reveal.overview .slides section {
+    height: 600px;
+    overflow: hidden;
+    opacity: 1!important;
+    visibility: visible!important;
+    cursor: pointer;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.reveal.overview .slides section .fragment {
+    opacity: 1;
+}
+.reveal.overview .slides section:after,
+.reveal.overview .slides section:before {
+    display: none !important;
+}
+.reveal.overview .slides section>section {
+    opacity: 1;
+    cursor: pointer;
+}
+.reveal.overview .slides section:hover > .thumb {
+
+}
+.reveal.overview .slides>section.stack {
+    padding: 0;
+    background: none;
+    overflow: visible;
+}
+.full .thumb {
+    display: none;
+}
+.reveal.overview section .thumb {
+	/* background: #fff; */
+    height: 100%;
+}
+.reveal.overview section.present  {
+	/* background: #ec6d20; */
+    padding:30px;
+}
+.reveal.overview section.present > .thumb {
+
+}

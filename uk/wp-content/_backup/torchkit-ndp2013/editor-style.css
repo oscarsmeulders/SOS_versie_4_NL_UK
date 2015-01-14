@@ -1,0 +1,153 @@
+/*[fmt]1A10-10AA-264*/
+@import url("http://fast.fonts.com/cssapi/76317f78-0ae3-4425-bc48-6d2a3f926e0a.css");
+body {
+ height: 595px; border-bottom: 5px solid #6D6362; width: 960px; background: #FFF;
+ font-size:12px;
+ font-family: sans-serif;
+}
+body article {
+ line-height: 1.6em;
+}
+body h2 {
+ line-height: 70px; margin-bottom: 20px; font-size: 12px; color: #6D6362;
+}
+body h3 {
+ color: #6D6362; float: left; width: 220px; margin: 0 80px 50px -60px; text-transform: uppercase; line-height: 35px; font-size: 25px; font-weight: 300; font-family: "Frutiger Roman", Helvetica;
+}
+body h3 i {
+ color: #A7B9E2;
+}
+body h2:before {
+ content: attr('data-count'); width: 70px; height: 70px; color: #FFF; background: #A7B9E2 no-repeat center; font-size: 14px; text-align: center; position: absolute; left: -90px;
+}
+body q {
+ text-align: right; display: block; font-size: 20px; line-height: 1em; font-style: italic; color: #A7B9E2; text-transform: uppercase;
+}
+body .fixed_image {
+ position: absolute; top: 0;
+ left: 0;
+}
+body .fixed_image.right {
+ right: 0;
+ left: auto;
+}
+body .forward,body .backward {
+ text-decoration: none;
+}
+body .forward:hover,body .backward:hover {
+ text-decoration: underline;
+}
+body .columns_12.video {
+ background-color: #6D6362; height:100%;
+}
+body .video .header {
+ text-align: right;
+}
+body .video .header .backward {
+ color: #FFF; display: inline-block; margin-top: 15px; padding: 15px 15px 5px; line-height: 15px; background: url(./images/icon-left-white.png) no-repeat 0px 15px;
+}
+body .video iframe, body .video .mceItemIframe {
+ width: 940px; height: 526px; margin: 10px;
+}
+
+/*Slides - home*/
+.mceContentBody .home {
+ height: 100%;
+}
+.mceContentBody .home h2 {
+ color: #FFF; background: #E36B2D; font-size: 138px; width: 530px; height: 540px; line-height: 540px; vertical-align: middle; text-align: center; margin-left: 28px; margin-top: 28px; margin-right: 0;
+}
+.mceContentBody .home img {
+ position: absolute; top: 28px; right: 28px;
+}
+.mceContentBody .home article {
+ height: 100%;
+}
+.mceContentBody .home .grid_5 {
+ height: 100%;
+}
+.mceContentBody .home .at-next {
+ position: absolute; bottom: 50%; right: 20px; line-height: 40px; margin: 0; font-size: 17px; color: #E36B2D;
+}
+.mceContentBody .home .to-index {
+ font-size: 17px; color: #E36B2D; text-decoration: none; position: absolute; bottom: 50px; left: 80px; line-height: 1;
+}
+.mceContentBody .home .to-index:before {
+ content: ' '; display: inline-block; margin-right: 5px; width: 10px; height: 10px; background: #E36B2D; vertical-align: baseline;
+}
+
+/*Slides - chapter*/
+.mceContentBody .chapter h2:before {
+ z-index: 2; width: 170px; height: 170px; line-height: 170px; font-size: 100px; font-family: "Frutiger LT W01 65 Bold", Verdana;
+ content: 'x';
+ position: absolute;
+ top:0;
+ left:-170px;
+}
+.mceContentBody .chapter h2 {
+ z-index: 10; font-size: 40px; line-height: 45px; position: absolute; top: 0; left: 0; margin: 0; height: 125px; border-bottom: 5px solid #6D6362; color: #E36B2D; background: #FFFFFF; margin-left: 170px; width: auto; padding: 20px 30px; min-width: 200px; max-width: 350px; font-family: "Frutiger LT W01 65 Bold", Verdana;
+}
+
+/*Slides fancy button */
+.fancybutton {
+    float:left;
+    margin: 0 10px 10px 0;
+    background: #6e6362;
+    border-bottom: solid 5px #ec6d20;
+    height: 140px;
+    width: 140px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+}
+.fancybutton img {
+    position: absolute;
+    top: 18px;
+    left: 32px;
+}
+.fancybutton span {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 140px;
+    text-align:center;
+    color: #fff;
+    background: no-repeat 10px url(./images/arrow-right.png);
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1em;
+    font-family: FrutigerLTW01-55Roman, Verdana, sans-serif;
+}
+.fancybutton:hover {
+    margin-top: -5px;
+    border-bottom-width:10px;
+}
+.fancybutton:active {
+    margin-top: 5px;
+    border-bottom-width:0px;
+}
+
+/* Editor helpers */
+
+.outlined {
+    outline: 1px dotted gray;
+}
+.image-outline {
+    background: rgba(100,100,100,0.3);
+    min-width:100px;
+    min-height:100px;
+    z-index:3;
+}
+.image-outline.full {
+    width: 960px;
+    height: 595px;
+}
+.image-outline:empty:before{
+    content: 'Fotohouder';
+}
+.video-outline {
+    width:100%;
+    height:100%;
+    background: #00B4CC;
+}

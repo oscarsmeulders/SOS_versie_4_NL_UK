@@ -1,0 +1,13 @@
+/*
+Theme Name: NDP 2013
+Theme URI: http://ximsystems.nl
+Author: Xim Systems
+Author URI: http://ximsystems.nl/
+Template: torchkit
+Description: Styling for NDP
+Version: 1
+*/
+
+@import url("../torchkit/style.css");
+@import url("./css/ndp.css");
+

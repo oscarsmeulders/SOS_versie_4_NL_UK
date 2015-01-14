@@ -1,0 +1,41 @@
+.example-theme {
+	@include theme-options;
+	@extend %home-navigation-white;
+	@extend %flip-bt-icons-white;
+	//@extend %flip-close-icon-white;
+
+	#ipad {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/ipad-screen-content-bg-txt-bottom.jpg');
+		}
+	}
+	#screen {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/screen-content-bg-txt-bottom.jpg');
+		}
+	}
+	#screen2 {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/screen-content-bg-txt-bottom-center.jpg');
+		}
+	}
+	#fullscreen-example {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/fullscreen-example.jpg');
+		}
+	}
+
+}
+.reveal.overview section[data-state='example-theme'] .thumb {
+	background: $thumb-color-bg;
+	h2 {
+		color: $thumb-color-txt;
+	}
+}
+.reveal.overview section[data-state='example-theme'].present  {
+	background: $thumb-color-bg-present;
+}
+
+/*
+	////////////////////////////////////////////////////////////////
+*/

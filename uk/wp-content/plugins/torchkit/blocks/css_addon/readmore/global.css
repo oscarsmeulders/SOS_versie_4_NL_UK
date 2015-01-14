@@ -1,0 +1,8 @@
+.leesverder {
+	padding-left: 17px;
+	background: url(images/arrow.png) left center no-repeat;
+
+}
+.leesverder:hover {
+	background: url(images/arrowHover.png) left center no-repeat;
+}

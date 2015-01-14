@@ -1,0 +1,15 @@
+/*
+Theme Name: Torchkit
+Description: Used to style the TinyMCE editor.
+*/
+
+@import url("./css/reset_tinymce.css");
+@import url("./css/default.css");
+@import url("./css/grid_12.css");
+
+
+html .mceContentBody {
+	width:960px;
+	height:600px;
+	position:relative;
+}

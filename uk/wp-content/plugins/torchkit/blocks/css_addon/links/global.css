@@ -1,0 +1,57 @@
+.reveal a,.reveal a:link,.reveal a:visited,.reveal a:hover,.reveal a:focus,.reveal a:active,
+.reveal a span,.reveal a:link span,.reveal a:visited span,.reveal a:hover span,.reveal a:focus span,.reveal a:active span {
+	color: #E36B2D;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.reveal a,.reveal a span {
+	color: #E36B2D;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.reveal a:link,.reveal a:link span {
+	color: #E36B2D;
+	text-decoration: underline;
+}
+.reveal a:visited,.reveal a:visited span {
+	color: #000;
+	text-decoration: underline;
+}
+.reveal a:hover,.reveal a:focus,
+.reveal a:hover span,.reveal a:focus span {
+	color: #000;
+	text-decoration: none;
+}
+.reveal a:active,.reveal a:active span {
+	color: #E36B2D;
+	text-decoration: none;
+}
+
+.flips a,.flips a:link,.flips a:visited,.flips a:hover,.flips a:focus,.flips a:active,
+.flips a span,.flips a:link span,.flips a:visited span,.flips a:hover span,.flips a:focus span,.flips a:active span {
+	color: #E36B2D;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.flips a,.flips a span {
+	color: #E36B2D;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.flips a:link,.flips a:link span {
+	color: #E36B2D;
+	text-decoration: underline;
+}
+.flips a:visited,.flips a:visited span {
+	color: #000;
+	text-decoration: underline;
+}
+.flips a:hover,.flips a:focus,
+.flips a:hover span,.flips a:focus span {
+	color: #000;
+	text-decoration: none;
+}
+.flips a:active,.flips a:active span {
+	color: #E36B2D;
+	text-decoration: none;
+}

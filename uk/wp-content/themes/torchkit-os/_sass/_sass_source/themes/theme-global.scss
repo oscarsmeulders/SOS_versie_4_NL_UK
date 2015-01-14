@@ -1,0 +1,313 @@
+/*
+	////////////////////////////////////////////////////////////////
+*/
+// background color for body, also used in the overview
+$body-bg:							#525252;
+
+// global color for the top navigation, contrast with $body-bg
+$nav-color-txt:						#fff;
+$nav-color-txt-hover:				darken($nav-color-txt, 15);
+
+// color for the navigation backgronds
+// the arrows are done with a extend
+// include this in the class if the arrow should be white
+// @extend %home-navigation-white;
+// 'lees verder' can have a different color
+$home-color-nav:					#404040;
+$home-color-nav-hover:				darken($home-color-nav, 10);
+$home-color-nav-down:				$home-color-nav;
+$home-color-nav-down-hover:			darken($home-color-nav-down, 10);
+
+// heading color + text color + image of first page
+// relative to in public folder, can be changed online
+// sub means the second heading, sub heading
+$home-color-heading-bg:				#343434;
+$home-color-heading-txt:			#FFF;
+$home-color-heading-sub-txt:		#FFF;
+$home-bg-img:						'/nl/wp-content/uploads/fullscreen-example.jpg';
+
+// color for the overview thumb, the present one and the text
+$thumb-color-txt:					#fff;
+$thumb-color-bg:					#898989;
+$thumb-color-bg-present:			lighten($thumb-color-bg, 20);
+
+// colors of the content pages
+$content-color-txt:					$home-color-heading-txt;
+$content-color-heading-txt:			$home-color-heading-txt;
+$content-color-heading-sub-txt:		$home-color-heading-sub-txt;
+$content-color-bg:					$home-color-heading-bg;
+
+$content-link-bg:					#ff00ff;
+$content-link-txt:					#000;
+
+$content-list-bg:					#000;
+$content-list-bg-hover:				#000;
+$content-list-txt-hover:			#000;
+
+// in the flip a heading (video)?
+// $flip-color-txt == heading txt
+// $flip-color-bg == flip background
+$flip-color-txt:					#fff;
+$flip-color-bg:						$content-color-bg;
+
+// $flip-color-slideshow-txt == color of description
+// $flip-color-slideshow-bg == color of background
+$flip-color-slideshow-txt:			#000;
+$flip-color-slideshow-bg:			#FFF;
+
+
+// button too call the flip
+// @extend %flip-icons-white if you wnat the icon white
+$flip-color-bt:						#d8468d;
+$flip-color-bt-hover:				darken($flip-color-bt, 10);
+
+// in the flip the 'close' / 'go back' button
+// TODO
+// make it black or white seperate from the other icons
+// do it with a @extend!!!!
+$flip-color-bt-close:				#d8468d;
+$flip-color-bt-close-hover:			darken($flip-color-bt-close, 10);
+/*
+	////////////////////////////////////////////////////////////////
+*/
+%transition-background-color {
+	@include transition(background-color 0.2s ease-in-out);
+}
+
+@mixin theme-options {
+	::selection {
+		background: $home-color-heading-txt;
+		color: $home-color-heading-bg;
+	}
+	////////////////////////////////////////////////////////////////
+	body {
+		background-color: $body-bg;
+	}
+	a {
+		color: $content-color-txt;
+		border-bottom-color: $content-link-bg;
+		&:hover {
+			background-color: $content-link-bg;
+			color: $content-link-txt;
+		}
+	}
+	.list {
+		background-color: $content-list-bg;
+		li {
+			&:hover {
+				background-color: $content-list-bg-hover;
+				color: $content-list-txt-hover;
+			}
+		}
+	}
+	////////////////////////////////////////////////////////////////
+	&.home, &.content-clients {
+		.bg {
+			background-image: url($home-bg-img);
+			width: 960px;
+			height:600px;
+		}
+		h1, h2, p {
+			z-index:9;
+			background-color: $home-color-heading-bg;
+			color: $home-color-heading-txt;
+		}
+		h2 {
+			color: $home-color-heading-sub-txt;
+
+		}
+	}
+	// end home
+	////////////////////////////////////////////////////////////////
+	h1, h2, h3, h4, h5, p {
+		color: $content-color-txt;
+	}
+	nav h1, nav h2, nav h3, nav h4, nav h5, nav p, nav {
+		color: $nav-color-txt;
+		a {
+			border-bottom: 0px dotted #fff;
+			&:hover {
+				background-color: transparent;
+				color: $nav-color-txt-hover;
+				border-bottom: 0px dotted #fff;
+			}
+		}
+	}
+	////////////////////////////////////////////////////////////////
+	&.content-image-txt {
+		article {
+			background-color: rgba($content-color-bg, 1);
+			color: $content-color-txt;
+			::selection {
+				background: $content-color-txt;
+				color: $content-color-bg;
+			}
+			h3 {
+				color: $content-color-heading-txt;
+			}
+			h4 {
+				color: $content-color-heading-sub-txt;
+			}
+		}
+	}
+	////////////////////////////////////////////////////////////////
+	&.content-bg-txt-insert {
+		article {
+			.inhoud {
+				::selection {
+					background: $content-color-txt;
+					color: $content-color-bg;
+				}
+				position: absolute;
+				background-color: rgba($content-color-bg, 1);
+				color: $content-color-txt;
+				padding: 30px 0 10px 0;
+				width: 480px;
+				&.right {
+					right: 0px;
+				}
+				&.bottom {
+					bottom: 0px;
+				}
+				&.inside {
+					margin: 25px;
+					width: 455px;
+				}
+				&.outside {
+					margin: -25px;
+					width: 505px;
+				}
+			}
+			h4 {
+				color: $home-color-heading-sub-txt;
+			}
+		}
+	}
+	////////////////////////////////////////////////////////////////
+	&.content-bg-txt-bottom {
+		article {
+			.inhoud {
+				&.small {
+					h5 {
+						padding: 0 0 40px 0;
+						font-weight: 100;
+						font-size: 20px;
+						text-transform: uppercase;
+					}
+				}
+				&.center {
+					width: 960px;
+					text-align: center;
+				}
+
+				position: absolute;
+				width: 880px;
+				bottom: 0px;
+				padding: 0;
+				h3 {
+					padding: 30px 0 0 0
+				}
+				h4 {
+					padding: 0 0 20px 0
+				}
+				h5 {
+					padding: 0 0 20px 0
+				}
+				p {
+					padding: 0;
+				}
+			}
+		}
+	}
+	////////////////////////////////////////////////////////////////
+	// controls give them color
+	.control.navigate-up,
+	.control.navigate-right,
+	.control.navigate-down,
+	.control.navigate-left,
+	a.leesverder {
+		background-color: $home-color-nav;
+		border: none;
+		@extend %transition-background-color;
+		&:hover {
+			background-color:$home-color-nav-hover;
+		}
+	}
+	.control.navigate-down, a.leesverder {
+		background-color: $home-color-nav-down;
+		&:hover {
+			background-color:$home-color-nav-down-hover;
+		}
+	}
+	// end controls
+	////////////////////////////////////////////////////////////////
+	// flip give them color
+	.flip {
+		background-color: $flip-color-bg;
+		color: $flip-color-txt;
+		h3 {
+			color: $flip-color-txt;
+		}
+		::selection {
+			background: $flip-color-txt;
+			color: $flip-color-bg;
+		}
+		.close {
+			a {
+				background-color: $flip-color-bt-close;
+				border: none;
+				@extend %transition-background-color;
+				&:hover {
+					text-decoration: none;
+					background-color:$flip-color-bt-close-hover;
+				}
+			}
+		}
+	}
+	&.slideshow {
+		.custom-caption {
+			background-color: $flip-color-slideshow-bg;
+			color: $flip-color-slideshow-txt;
+			::selection {
+				background: $flip-color-slideshow-txt;
+				color: $flip-color-slideshow-bg;
+			}
+		}
+	}
+	// end flip give them color
+	////////////////////////////////////////////////////////////////
+	// flip button in content
+	.flip-bt{
+		display: table;
+		div {
+			background-color: $flip-color-bt;
+			@extend %transition-background-color;
+			&:hover {
+				background-color:$flip-color-bt-hover;
+			}
+		}
+	}
+	// end flip button in content
+	////////////////////////////////////////////////////////////////
+}
+
+
+
+// additional themes
+
+@import 'theme-example';
+@import 'theme-sos';
+@import 'theme-contact';
+@import 'theme-opdrachtgevers';
+@import 'theme-over-oscar';
+@import 'theme-ndp';
+@import 'theme-ucla';
+@import 'theme-hog';
+@import 'theme-2samen';
+@import 'theme-rdam';
+@import 'theme-erasmus';
+@import 'theme-curarata';
+@import 'theme-bricmist';
+@import 'theme-fiat-prof';
+@import 'theme-saltro';
+@import 'theme-klebowax';

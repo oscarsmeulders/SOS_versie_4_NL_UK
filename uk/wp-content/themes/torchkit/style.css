@@ -1,0 +1,17 @@
+/*
+Theme Name: Torchkit - base
+Theme URI: http://ximsystems.nl
+Author: Xim Systems
+Author URI: http://ximsystems.nl/
+Description: Styling for Torchkit - overridden by child themes
+Version: 1
+*/
+
+@import url("./css/default.css");
+@import url("./css/grid_12.css");
+@import url("./css/base.css");
+@import url("./css/overview.css");
+@import url("./css/controls.css");
+@import url("./css/progress.css");
+@import url("./css/content.css");
+

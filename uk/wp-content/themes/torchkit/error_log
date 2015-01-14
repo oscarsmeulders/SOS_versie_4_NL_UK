@@ -1,0 +1,1 @@
+[17-Aug-2014 11:06:17 Europe/Berlin] PHP Fatal error:  Call to undefined function get_header() in /home/ndpjaarv/public_html/nl/jaarverslag2013/wp-content/themes/torchkit/index.php on line 15
