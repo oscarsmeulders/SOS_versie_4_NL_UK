@@ -78,6 +78,26 @@ $flip-color-bt-close-hover:			darken($flip-color-bt-close, 10);
 			//background-color: #fff !important;
 		}
 	}
+	#rdam-website-1 {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/rotterdam-info-agenda.jpg');
+		}
+	}
+	#rdam-website-2 {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/rotterdam-info-filters.jpg');
+		}
+	}
+	#rdam-mailing {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/rotterdam-info-mailing.jpg');
+		}
+	}
+	#rdam-google {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/rotterdam-info-google.jpg');
+		}
+	}
 }
 
 

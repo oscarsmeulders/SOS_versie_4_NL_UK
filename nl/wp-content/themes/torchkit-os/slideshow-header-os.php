@@ -21,8 +21,8 @@
 					</a>
 				</li>
 				<li class='menu-item switch right'>
-					<a class="" href="/en/">
-						Switch to english
+					<a class="to-language" href="/uk/">
+						English
 					</a>
 				</li>
 			</ul>

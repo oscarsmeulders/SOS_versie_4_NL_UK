@@ -167,8 +167,15 @@ a {
 		@include opacity(1);
 	}
 }
-
-
+/*custom portrait-landscape for NDP*/
+@media only screen and (orientation: portrait) {
+	.touch body {
+		background-color: #555 !important;
+		background-image: url('../img/change-orientation.png') !important;
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+	}
+}
 
 /*
 	////////////////////////////////////////////////////////////////
@@ -438,10 +445,3 @@ html {
 @import '_sass_source/themes/theme-global';
 
 
-/*custom portrait-landscape for NDP*/
-@media only screen and (orientation: portrait) {
-	.touch body {
-		background: rgba(204, 204, 204, 0.3) url('../images/change-orientation-NDP.png') no-repeat center !important;
-	}
-
-}

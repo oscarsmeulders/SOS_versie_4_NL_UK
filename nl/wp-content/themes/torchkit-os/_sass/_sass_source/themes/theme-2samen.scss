@@ -75,48 +75,20 @@ $flip-color-bt-close-hover:			darken($flip-color-bt-close, 10);
 	@extend %list-navigation-white;
 	@extend %flip-bt-icons-white;
 	@extend %flip-close-icon-white;
-	#hog-vormentaal {
+	#samen-website-1 {
 		.bg {
-			background-image: url('/nl/wp-content/uploads/houseofgreen-vormentaal.jpg');
+			background-image: url('/nl/wp-content/uploads/2samen-center-home.jpg');
 		}
 	}
-	#hog-tuinObject {
+	#samen-website-2 {
 		.bg {
-			background-image: url('/nl/wp-content/uploads/hog-tuinobject.jpg');
-		}
-	}
-	#hog-tuinObject-night {
-		.bg {
-			background-image: url('/nl/wp-content/uploads/houseofgreen_slide_1.jpg');
-		}
-	}
-	#hog-etalage {
-		.bg {
-			background-image: url('/nl/wp-content/uploads/houseofgreen_slide_3.jpg');
-		}
-	}
-	#hog-website-1 {
-		.bg {
-			background-image: url('/nl/wp-content/uploads/hog-website-1.jpg');
-		}
-	}
-	#hog-website-2 {
-		.bg {
-			background-image: url('/nl/wp-content/uploads/hog-website-2.jpg');
-		}
-	}
-	#hog-webshop-1 {
-		.bg {
-			background-image: url('/nl/wp-content/uploads/hog-webshop-1.jpg');
-		}
-	}
-	#hog-webshop-2 {
-		.bg {
-			background-image: url('/nl/wp-content/uploads/hog-webshop-2.jpg');
+			background-image: url('/nl/wp-content/uploads/2samen-inloggen.jpg');
 		}
 	}
 }
-
+.samen-theme.content-bg-txt-bottom h5 {
+	color: #fff;
+}
 
 .reveal.overview section[data-state *= 'samen-theme'] .thumb {
 	background: $thumb-color-bg;
