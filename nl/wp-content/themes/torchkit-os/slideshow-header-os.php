@@ -20,11 +20,13 @@
 						Contact
 					</a>
 				</li>
-				<li class='menu-item switch right'>
+				<!--
+<li class='menu-item switch right'>
 					<a class="to-language" href="/uk/">
 						English
 					</a>
 				</li>
+-->
 			</ul>
 		</nav>
 	</div>

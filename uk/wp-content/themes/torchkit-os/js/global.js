@@ -41,6 +41,16 @@
             }
         });
     }
+    //////////////////
+    // langauge click trigger
+    $('a.to-language').on('click', function() {
+	    event.preventDefault();
+	    var hash = window.location.hash;
+	    //console.log (hash);
+	    window.open( this.href + '/' + hash, "_self");
+
+	});
+
 	//////////////////
     // external trigger
     $('a.to-external').on('click', function() {

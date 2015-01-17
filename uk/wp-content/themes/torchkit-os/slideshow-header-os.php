@@ -21,7 +21,7 @@
 					</a>
 				</li>
 				<li class='menu-item switch right'>
-					<a class="" href="/nl/">
+					<a class="to-language" href="/nl/">
 						Nederlands
 					</a>
 				</li>

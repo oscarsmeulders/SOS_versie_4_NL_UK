@@ -21,9 +21,9 @@ jQuery(function($) {
 	//
 	// MIST BRIC slideshows
 	var mist_slides1 = [
-	    "<img data-cycle-title='Animatie van bollen naar het logo.' src='/nl/wp-content/uploads/bricmist_slide4.jpg'>",
-	    "<img data-cycle-title='Pakhuis de Zwijger en zijn 9 schermen.' src='/nl/wp-content/uploads/bricmist_slide3.jpg'>",
-	    "<img data-cycle-title='Scherm om alle powerpoints te openen.' src='/nl/wp-content/uploads/bricmist_slide1.jpg'>",
+	    "<img data-cycle-title='Animtion from balls to logo.' src='/nl/wp-content/uploads/bricmist_slide4.jpg'>",
+	    "<img data-cycle-title='Pakhuis de Zwijger and here 9 screens.' src='/nl/wp-content/uploads/bricmist_slide3.jpg'>",
+	    "<img data-cycle-title='Screen to open all Powerpoints.' src='/nl/wp-content/uploads/bricmist_slide1.jpg'>",
 	];
 	// call this init in the WP onActive of the slide
 	init_mist_slideshow1 = function() {

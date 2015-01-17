@@ -1,15 +1,20 @@
+
+
 <script type="text/javascript">
-    //$(document).ready(function() {
-    (function($, Modernizr) {
         window._gaq = window._gaq || [];
         var analyticsIds = <?= json_encode($analyticsIds); ?>,
             linkAttribution = <?= json_encode($linkAttribution); ?>,
             analyticsTimeout = 2000,
             analyticsTimeoutId;
 
+
+
         function pushAnalytics(command) {
             var analyticsId;
             var args = Array.prototype.slice.call(arguments);
+
+			//console.log('test');
+			//console.log ( analyticsIds +  ' :: ' + linkAttribution);
 
             for(key in analyticsIds) {
                 if (key == 0) {
@@ -31,7 +36,7 @@
             //pushAnalytics("_set", "title", slideTitle);
             document.title = slideTitle;
             pushAnalytics("_trackPageview", window.location.pathname + slideId);
-
+			console.log ( slideTitle +  ' :: ' + slideId);
             analyticsTimeoutId = null;
         }
 
@@ -66,7 +71,6 @@
             if(Reveal.isOverviewActive()) {
                 return;
             }
-
             if(analyticsTimeoutId) {
                 clearTimeout(analyticsTimeoutId);
             }
@@ -99,5 +103,5 @@
         }
 
         init();
-    });
+
 </script>

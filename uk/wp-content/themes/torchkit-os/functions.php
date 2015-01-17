@@ -40,4 +40,40 @@ remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 
+// http://emrahgunduz.com/categories/development/wordpress/create-sitemap-xml-in-wordpress-without-any-plugins/
+add_action("publish_slide", "torchkit_sitemap");
+add_action("publish_post", "torchkit_sitemap");
+add_action("publish_page", "torchkit_sitemap");
+function torchkit_sitemap() {
+	$args = array(
+		//'post_type'=> 'movie',
+		'numberposts' => 9999,
+		'posts_per_page' => 9999,
+		'order'    => 'DESC	',
+		'post_type' => 'slide',
+		'post_status' => 'publish'
+	);
+	query_posts( $args );
+
+	$sitemap = '<?xml version="1.0" encoding="UTF-8"?>';
+	$sitemap .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+	$sitemap .= '<url><loc>' . get_site_url() . '</loc><lastmod>2015-01-01</lastmod><changefreq>monthly</changefreq></url>';
+
+	while (have_posts()) : the_post();
+
+		$posturl = get_site_url() . '/#/' . str_replace("-","_", sanitize_title( get_the_title() ) );
+		$postdate = get_the_modified_date( 'Y-m-d' );
+
+		$sitemap .= '<url>'.
+						'<loc>'. $posturl .'</loc>'.
+						'<lastmod>'. $postdate .'</lastmod>'.
+						'<changefreq>monthly</changefreq>'.
+					'</url>';
+	endwhile;
+	$sitemap .= $tmp.'</urlset>';
+
+	$fp = fopen(ABSPATH . "sitemap.xml", 'w');
+	fwrite($fp, $sitemap);
+	fclose($fp);
+}
 ?>
