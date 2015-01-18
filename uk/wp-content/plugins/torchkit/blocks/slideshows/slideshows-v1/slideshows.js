@@ -62,5 +62,5 @@ jQuery(function($) {
 		$('#sos-slideshow1').cycle('pause');
 	};
 	// end SOS
-	init_sos_slideshow1();
+	//init_sos_slideshow1();
 })

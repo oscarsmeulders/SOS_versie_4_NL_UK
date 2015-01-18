@@ -1179,15 +1179,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/css\/styles.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/styles.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/editor-style.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -1205,6 +1196,160 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/images\/arrow-right.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2862,
+		"inputAbbreviatedPath": "\/images\/arrow-right.png",
+		"outputAbbreviatedPath": "\/images\/arrow-right.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/change-orientation-NDP.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9763,
+		"inputAbbreviatedPath": "\/images\/change-orientation-NDP.png",
+		"outputAbbreviatedPath": "\/images\/change-orientation-NDP.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icon-diagram.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3414,
+		"inputAbbreviatedPath": "\/images\/icon-diagram.png",
+		"outputAbbreviatedPath": "\/images\/icon-diagram.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icon-left-white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2860,
+		"inputAbbreviatedPath": "\/images\/icon-left-white.png",
+		"outputAbbreviatedPath": "\/images\/icon-left-white.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icon-pdf.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8900,
+		"inputAbbreviatedPath": "\/images\/icon-pdf.png",
+		"outputAbbreviatedPath": "\/images\/icon-pdf.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icon-right-orange.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2882,
+		"inputAbbreviatedPath": "\/images\/icon-right-orange.png",
+		"outputAbbreviatedPath": "\/images\/icon-right-orange.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/logo-big.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10394,
+		"inputAbbreviatedPath": "\/images\/logo-big.png",
+		"outputAbbreviatedPath": "\/images\/logo-big.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6127,
+		"inputAbbreviatedPath": "\/images\/logo.png",
+		"outputAbbreviatedPath": "\/images\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/menu copy.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2856,
+		"inputAbbreviatedPath": "\/images\/menu copy.png",
+		"outputAbbreviatedPath": "\/images\/menu copy.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/menu-separator.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2801,
+		"inputAbbreviatedPath": "\/images\/menu-separator.png",
+		"outputAbbreviatedPath": "\/images\/menu-separator.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/menu-toggle.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2848,
+		"inputAbbreviatedPath": "\/images\/menu-toggle.png",
+		"outputAbbreviatedPath": "\/images\/menu-toggle.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/menu.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 954,
+		"inputAbbreviatedPath": "\/images\/menu.png",
+		"outputAbbreviatedPath": "\/images\/menu.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/toggle-fullscreen.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2907,
+		"inputAbbreviatedPath": "\/images\/toggle-fullscreen.png",
+		"outputAbbreviatedPath": "\/images\/toggle-fullscreen.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/toggle-normalscreen.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2915,
+		"inputAbbreviatedPath": "\/images\/toggle-normalscreen.png",
+		"outputAbbreviatedPath": "\/images\/toggle-normalscreen.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/_old\/arrow-down-black.png": {
 		"fileType": 32768,
@@ -1400,17 +1545,6 @@
 		"initialSize": 1218,
 		"inputAbbreviatedPath": "\/img\/arrow-up-white.png",
 		"outputAbbreviatedPath": "\/img\/arrow-up-white.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/change-orientation.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2392,
-		"inputAbbreviatedPath": "\/img\/change-orientation.png",
-		"outputAbbreviatedPath": "\/img\/change-orientation.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
