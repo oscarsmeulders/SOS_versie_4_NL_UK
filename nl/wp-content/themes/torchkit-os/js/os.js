@@ -8,6 +8,7 @@ jQuery( document ).ready(function( $ ) {
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 	ga('create', 'UA-9620542-2', 'auto');
+	ga('require', 'linkid', 'linkid.js');
 	ga_onSlideChanged();
 	function ga_onSlideChanged() {
 		ga_TimeoutId = setTimeout(ga_onSlideChanged_timer, 2000);
@@ -16,7 +17,7 @@ jQuery( document ).ready(function( $ ) {
 		clearTimeout(ga_TimeoutId);
 		var $page = $('.full.present').attr('data-title');
 		var $url  = window.location;
-		console.log( $page );
+		//console.log( $page );
 		ga('send', 'pageview', {
 			'page': $url,
 			'title': $page
