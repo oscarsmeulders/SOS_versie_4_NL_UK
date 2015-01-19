@@ -1,0 +1,116 @@
+/*
+	////////////////////////////////////////////////////////////////
+*/
+// background color for body, also used in the overview
+$body-bg:							#6eb400;
+
+// global color for the top navigation, contrast with $body-bg
+$nav-color-txt:						#143317;
+$nav-color-txt-hover:				#fff;
+
+// color for the navigation backgronds
+// the arrows are done with a extend
+// include this in the class if the arrow should be white
+// @extend %home-navigation-white;
+// 'lees verder' can have a different color
+$home-color-nav:					darken(#6eb400, 10);
+$home-color-nav-hover:				darken($home-color-nav, 10);
+$home-color-nav-down:				$home-color-nav;
+$home-color-nav-down-hover:			darken($home-color-nav-down, 10);
+
+// heading color + text color + image of first page
+// relative to in public folder, can be changed online
+// sub means the second heading, sub heading
+$home-color-heading-bg:				#153319;
+$home-color-heading-txt:			#fff;
+$home-color-heading-sub-txt:		#fff;
+$home-bg-img:						'/nl/wp-content/uploads/rotterdam-info-home.jpg';
+
+// color for the overview thumb, the present one and the text
+$thumb-color-txt:					#fff;
+$thumb-color-bg:					darken(#6eb400,10);
+$thumb-color-bg-present:			lighten($thumb-color-bg, 20);
+
+// colors of the content pages
+$content-color-txt:					#153319;
+$content-color-heading-txt:			#153319;
+$content-color-heading-sub-txt:		#6eb400;
+$content-color-bg:					#fff;
+
+$content-link-bg:					$content-color-heading-sub-txt;
+$content-link-txt:					#fff;
+
+$content-list-bg:					lighten($content-color-heading-txt, 83);
+$content-list-bg-hover:				lighten($content-color-heading-txt, 80);
+$content-list-txt-hover:			#000;
+
+// in the flip a heading (video)?
+// $flip-color-txt == heading txt
+// $flip-color-bg == flip background
+$flip-color-txt:					#fff;
+$flip-color-bg:						$content-color-bg;
+
+// $flip-color-slideshow-txt == color of description
+// $flip-color-slideshow-bg == color of background
+$flip-color-slideshow-txt:			#000;
+$flip-color-slideshow-bg:			#FFF;
+
+// button too call the flip
+// @extend %flip-icons-white if you wnat the icon white
+$flip-color-bt:						#6eb400;
+$flip-color-bt-hover:				darken($flip-color-bt, 10);
+
+// in the flip the 'close' / 'go back' button
+// for white close button
+// @extend %flip-close-icon-white
+$flip-color-bt-close:				#d8468d;
+$flip-color-bt-close-hover:			darken($flip-color-bt-close, 10);
+/*
+	////////////////////////////////////////////////////////////////
+*/
+.rdam-theme {
+	@include theme-options;
+	@extend %home-navigation-white;
+	@extend %flip-bt-icons-white;
+	@extend %flip-close-icon-white;
+	&.rdam-theme-sub {
+		body {
+			//background-color: #fff !important;
+		}
+	}
+	#rdam-website-1 {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/rotterdam-info-agenda.jpg');
+		}
+	}
+	#rdam-website-2 {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/rotterdam-info-filters.jpg');
+		}
+	}
+	#rdam-mailing {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/rotterdam-info-mailing.jpg');
+		}
+	}
+	#rdam-google {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/rotterdam-info-google.jpg');
+		}
+	}
+}
+
+
+
+.reveal.overview section[data-state *= 'rdam-theme'] .thumb {
+	background: $thumb-color-bg;
+	h2 {
+		color: $thumb-color-txt;
+	}
+}
+.reveal.overview section[data-state *= 'rdam-theme'].present  {
+	background: $thumb-color-bg-present;
+}
+/*
+	////////////////////////////////////////////////////////////////
+*/
