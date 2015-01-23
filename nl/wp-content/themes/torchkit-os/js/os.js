@@ -18,17 +18,88 @@ jQuery( document ).ready(function( $ ) {
 		var $page = $('.full.present').attr('data-title');
 		var $url  = window.location;
 		//console.log( $page );
-		ga('send', 'pageview', {
+		ga(	'send', 'pageview', {
 			'page': $url,
 			'title': $page
 		});
 
     }
     Reveal.addEventListener('slidechanged', ga_onSlideChanged);
-
-
-
-
+	////////////////////////////////////////////////////////////////////////////////
+	rnddly = function (timerAdd) {
+		var tmp = Math.ceil(Math.random() * 500) + timerAdd;
+		//console.log(tmp);
+		return tmp
+	}
+	rndimg = function(amount) {
+		return Math.floor((Math.random() * amount));
+	}
+	////////////////////////////////////////////////////////////////////////////////
+	function Shuffle(o) {
+		for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+		return o;
+	};
+	$home_imageUrl = new Array (
+		"/nl/wp-content/uploads/home_1.jpg",
+		"/nl/wp-content/uploads/home_2.jpg",
+		"/nl/wp-content/uploads/home_3.jpg",
+		"/nl/wp-content/uploads/home_4.jpg",
+		"/nl/wp-content/uploads/home_5.jpg",
+		"/nl/wp-content/uploads/home_6.jpg",
+		"/nl/wp-content/uploads/home_7.jpg",
+		"/nl/wp-content/uploads/home_8.jpg",
+		"/nl/wp-content/uploads/home_9.jpg",
+		"/nl/wp-content/uploads/home_10.jpg",
+		"/nl/wp-content/uploads/home_11.jpg",
+		"/nl/wp-content/uploads/home_12.jpg"
+	);
+		
+	sos_home_fill_divs_front = function () {
+		Shuffle($home_imageUrl);
+		$('.sos-theme.content-image-txt li').each(function(i) {
+			$(this).find('div.front').css('background-image', 'url(' + $home_imageUrl[i] + ')');
+		});		
+	}
+	sos_home_fill_divs_back = function () {
+		Shuffle($home_imageUrl);
+		$('.sos-theme.content-image-txt li').each(function(i) {
+			$(this).find('div.back').css('background-image', 'url(' + $home_imageUrl[i] + ')');
+		});		
+	}
+	
+	sos_home_rotate = function () {
+		if ($dir == 'back'){
+			//console.log ('sos_home back');
+			sos_home_fill_divs_back();
+			$('.sos-theme.content-image-txt li').each(function() {
+				$(this).delay( rnddly(2000) ).queue(function(next){
+					$(this).addClass('flipped');
+					$(this).dequeue();
+				});
+			});
+			$dir = 'front';
+			$timer = setTimeout(sos_home_rotate, 5000);
+		} else {
+			//console.log ('sos_home front');
+			sos_home_fill_divs_front();
+			$('.sos-theme.content-image-txt li').each(function() {
+				$(this).delay( rnddly(2000) ).queue(function(next){
+					$(this).removeClass('flipped');
+					$(this).dequeue();
+				});
+			});
+			$dir = 'back';
+			$timer = setTimeout(sos_home_rotate, 5000);
+		}		
+	}
+	sos_home_rotate_stop = function () {
+		clearInterval($timer);
+	};
+	$dir = 'back';
+	sos_home_fill_divs_front();
+	$timerStarter = setTimeout(sos_home_rotate, 2000);
+	////////////////////////////////////////////////////////////////////////////////
+	
 	client_load_images = function() {
 		var $i = 0;
 		var $j = 0;
