@@ -343,10 +343,12 @@ html {
 			height: 100px;
 			top: 550px;
 			left: 430px;
+			transform-style: preserve-3d;
+			perspective: 1500px;
 		}
 		// homepage animation
 		.home-images {
-			z-index: 999;
+			z-index: 10;
 			width: 960px;
 			height: 600px;
 			position: relative;
@@ -354,6 +356,7 @@ html {
 			ul, li {
 				margin: 0;
 				padding: 0;
+				z-index: 10;
 			}
 			li {
 				float:left;

@@ -284,16 +284,19 @@ html.slideshow .flip-bt {
       width: 100px;
       height: 100px;
       top: 550px;
-      left: 430px; }
+      left: 430px;
+      transform-style: preserve-3d;
+      perspective: 1500px; }
     .content-image-txt.half .home-images, .content-bg-txt-insert.half .home-images, .content-bg-txt-bottom.half .home-images {
-      z-index: 999;
+      z-index: 10;
       width: 960px;
       height: 600px;
       position: relative;
       perspective: 1500px; }
       .content-image-txt.half .home-images ul, .content-image-txt.half .home-images li, .content-bg-txt-insert.half .home-images ul, .content-bg-txt-insert.half .home-images li, .content-bg-txt-bottom.half .home-images ul, .content-bg-txt-bottom.half .home-images li {
         margin: 0;
-        padding: 0; }
+        padding: 0;
+        z-index: 10; }
       .content-image-txt.half .home-images li, .content-bg-txt-insert.half .home-images li, .content-bg-txt-bottom.half .home-images li {
         float: left;
         list-style: none;
