@@ -104,7 +104,7 @@ a {
         background-position: 5px center;
         background-size: 30px 30px; }
 
-.ndp-theme .list a li, .ucla-theme .list a li, .hog-theme .list a li, .samen-theme .list a li, .erasmus-theme .list a li {
+.ndp-theme .list a li, .ucla-theme .list a li, .hog-theme .list a li, .samen-theme .list a li, .erasmus-theme .list a li, .saltro-theme .list a li {
   background-image: url(../img/arrow-right-white.png); }
 
 .header, header {
@@ -277,7 +277,9 @@ html.slideshow .flip-bt {
     .content-image-txt.half article, .content-bg-txt-insert.half article, .content-bg-txt-bottom.half article {
       z-index: 9999;
       width: 480px;
-      height: 300px; }
+      height: 300px;
+      transform-style: preserve-3d;
+      perspective: 1px; }
     .content-image-txt.half a.leesverder, .content-bg-txt-insert.half a.leesverder, .content-bg-txt-bottom.half a.leesverder {
       z-index: 9999;
       position: absolute;
@@ -2910,7 +2912,7 @@ header {
   background-color: #0082c9; }
   .saltro-theme .list li:hover {
     background-color: #008bd9;
-    color: #000; }
+    color: #FFF; }
 .saltro-theme.home .bg, .saltro-theme.content-clients .bg {
   background-image: url("/nl/wp-content/uploads/saltro-home.jpg");
   width: 960px;

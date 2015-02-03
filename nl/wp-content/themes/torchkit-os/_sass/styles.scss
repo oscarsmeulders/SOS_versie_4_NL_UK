@@ -335,6 +335,8 @@ html {
 			z-index: 9999;
 			width: 480px;
 			height: 300px;
+			transform-style: preserve-3d;
+			perspective: 1px;
 		}
 		a.leesverder  {
 			z-index: 9999;

@@ -42,7 +42,7 @@ $content-link-txt:					#fff;
 
 $content-list-bg:					lighten($content-color-bg, 2);
 $content-list-bg-hover:				lighten($content-color-bg, 5);
-$content-list-txt-hover:			#000;
+$content-list-txt-hover:			#FFF;
 
 // in the flip a heading (video)?
 // $flip-color-txt == heading txt
@@ -71,6 +71,7 @@ $flip-color-bt-close-hover:			darken($flip-color-bt-close, 10);
 .saltro-theme {
 	@include theme-options;
 	@extend %home-navigation-white;
+	@extend %list-navigation-white;
 	@extend %flip-bt-icons-white;
 	@extend %flip-close-icon-white;
 }
