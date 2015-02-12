@@ -274,7 +274,7 @@ html {
 				}
 			}
 		}
-		.flip-bt {
+		.flip-bt, p {
 			display: none !important;
 			visibility: hidden !important;
 		}
@@ -286,9 +286,6 @@ html {
 		}
 	}
 }
-
-
-
 .flipend .control.enabled, .flipstart .control.enabled {
 	display: none !important;
 	visibility: hidden !important;

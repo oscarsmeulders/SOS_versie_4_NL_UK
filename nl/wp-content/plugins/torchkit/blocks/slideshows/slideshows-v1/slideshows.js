@@ -1,23 +1,5 @@
 jQuery(function($) {
 	//
-	// house of green slideshows
-	var hog_slides1 = [
-	    "<img data-cycle-title='Etalage Noordeinde Den Haag' src='/nl/wp-content/uploads/houseofgreen-home.jpg'>",
-	];
-	// call this init in the WP onActive of the slide
-	init_hog_slideshow1 = function() {
-		//console.log ('init_hog_slideshow1 called');
-		$('#hog-slideshow1').cycle({
-	    	progressive: hog_slides1,
-	    	speed: 250
-		});
-		$('#hog-slideshow1').cycle('resume');
-	}
-	//
-	stop_hog_slideshow1 = function() {
-		$('#hog-slideshow1').cycle('pause');
-	};
-	// end house of green
 	//
 	// MIST BRIC slideshows
 	var mist_slides1 = [
@@ -40,28 +22,23 @@ jQuery(function($) {
 	};
 	// end MIST BRIC
 
-
-	// SOS
-	var sos_slides1 = [
-	    "<img data-cycle-title='' src='/nl/wp-content/uploads/bricmist_slide4.jpg'>",
-	    "<img data-cycle-title='' src='/nl/wp-content/uploads/bricmist_slide3.jpg'>",
-	    "<img data-cycle-title='' src='/nl/wp-content/uploads/bricmist_slide1.jpg'>",
+	// oo-processing slideshows
+	var oo_processing_slides1 = [
+	    "<img data-cycle-title='Schetsmatig bewerken van beelden' src='/nl/wp-content/uploads/processing-02.jpg'>",
 	];
 	// call this init in the WP onActive of the slide
-	init_sos_slideshow1 = function() {
-		//console.log ('init_sos_slideshow1 called');
-		$('#sos-slideshow1').cycle({
-	    	progressive: sos_slides1,
-	    	delay: 1000,
+	init_oo_processing_slideshow1 = function() {
+		//console.log ('init_hog_slideshow1 called');
+		$('#oo_processing-slideshow1').cycle({
+	    	progressive: oo_processing_slides1,
 	    	speed: 250
 		});
-		$('#sos-slideshow1').cycle('resume');
+		$('#oo_processing-slideshow1').cycle('resume');
 	}
 	//
-	stop_sos_slideshow1 = function() {
-		$('#sos-slideshow1').cycle('pause');
+	stop_oo_processing_slideshow1 = function() {
+		$('#oo_processing-slideshow1').cycle('pause');
 	};
-	// end SOS
-	//init_sos_slideshow1();
+	// end house of green
 	
 })

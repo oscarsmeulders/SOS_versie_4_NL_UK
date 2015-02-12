@@ -234,7 +234,7 @@ html.slideshow .slideshowimages {
       max-height: 600px;
       width: 9600px;
       height: 600px; }
-html.slideshow .flip-bt {
+html.slideshow .flip-bt, html.slideshow p {
   display: none !important;
   visibility: hidden !important; }
 
@@ -452,29 +452,29 @@ a.leesverder {
 .no-svg a.leesverder {
   background-image: url(../img/arrow-leesverder-black.png); }
 
-.example-theme .reveal .control.navigate-up, .contact-theme .reveal .control.navigate-up, .clients .reveal .control.navigate-up, .over-oscar .reveal .control.navigate-up, .ndp-theme .reveal .control.navigate-up, .ucla-theme .reveal .control.navigate-up, .hog-theme .reveal .control.navigate-up, .samen-theme .reveal .control.navigate-up, .rdam-theme .reveal .control.navigate-up, .erasmus-theme .reveal .control.navigate-up, .curarata-theme .reveal .control.navigate-up, .fiat-prof-theme .reveal .control.navigate-up, .saltro-theme .reveal .control.navigate-up, .klebowax-theme .reveal .control.navigate-up {
+.example-theme .reveal .control.navigate-up, .contact-theme .reveal .control.navigate-up, .clients .reveal .control.navigate-up, .over-oscar .reveal .control.navigate-up, .ndp-theme .reveal .control.navigate-up, .ucla-theme .reveal .control.navigate-up, .hog-theme .reveal .control.navigate-up, .samen-theme .reveal .control.navigate-up, .rdam-theme .reveal .control.navigate-up, .erasmus-theme .reveal .control.navigate-up, .curarata-theme .reveal .control.navigate-up, .fiat-prof-theme .reveal .control.navigate-up, .saltro-theme .reveal .control.navigate-up, .klebowax-theme .reveal .control.navigate-up, .oo-processing-theme .reveal .control.navigate-up {
   color: #fff;
   background-image: url(../img/arrow-up-white.svg); }
-.example-theme .reveal .control.navigate-right, .contact-theme .reveal .control.navigate-right, .clients .reveal .control.navigate-right, .over-oscar .reveal .control.navigate-right, .ndp-theme .reveal .control.navigate-right, .ucla-theme .reveal .control.navigate-right, .hog-theme .reveal .control.navigate-right, .samen-theme .reveal .control.navigate-right, .rdam-theme .reveal .control.navigate-right, .erasmus-theme .reveal .control.navigate-right, .curarata-theme .reveal .control.navigate-right, .fiat-prof-theme .reveal .control.navigate-right, .saltro-theme .reveal .control.navigate-right, .klebowax-theme .reveal .control.navigate-right {
+.example-theme .reveal .control.navigate-right, .contact-theme .reveal .control.navigate-right, .clients .reveal .control.navigate-right, .over-oscar .reveal .control.navigate-right, .ndp-theme .reveal .control.navigate-right, .ucla-theme .reveal .control.navigate-right, .hog-theme .reveal .control.navigate-right, .samen-theme .reveal .control.navigate-right, .rdam-theme .reveal .control.navigate-right, .erasmus-theme .reveal .control.navigate-right, .curarata-theme .reveal .control.navigate-right, .fiat-prof-theme .reveal .control.navigate-right, .saltro-theme .reveal .control.navigate-right, .klebowax-theme .reveal .control.navigate-right, .oo-processing-theme .reveal .control.navigate-right {
   color: #fff;
   background-image: url(../img/arrow-right-white.svg); }
-.example-theme .reveal .control.navigate-down, .contact-theme .reveal .control.navigate-down, .clients .reveal .control.navigate-down, .over-oscar .reveal .control.navigate-down, .ndp-theme .reveal .control.navigate-down, .ucla-theme .reveal .control.navigate-down, .hog-theme .reveal .control.navigate-down, .samen-theme .reveal .control.navigate-down, .rdam-theme .reveal .control.navigate-down, .erasmus-theme .reveal .control.navigate-down, .curarata-theme .reveal .control.navigate-down, .fiat-prof-theme .reveal .control.navigate-down, .saltro-theme .reveal .control.navigate-down, .klebowax-theme .reveal .control.navigate-down {
+.example-theme .reveal .control.navigate-down, .contact-theme .reveal .control.navigate-down, .clients .reveal .control.navigate-down, .over-oscar .reveal .control.navigate-down, .ndp-theme .reveal .control.navigate-down, .ucla-theme .reveal .control.navigate-down, .hog-theme .reveal .control.navigate-down, .samen-theme .reveal .control.navigate-down, .rdam-theme .reveal .control.navigate-down, .erasmus-theme .reveal .control.navigate-down, .curarata-theme .reveal .control.navigate-down, .fiat-prof-theme .reveal .control.navigate-down, .saltro-theme .reveal .control.navigate-down, .klebowax-theme .reveal .control.navigate-down, .oo-processing-theme .reveal .control.navigate-down {
   color: #fff;
   background-image: url(../img/arrow-down-white.svg); }
-.example-theme .reveal .control.navigate-left, .contact-theme .reveal .control.navigate-left, .clients .reveal .control.navigate-left, .over-oscar .reveal .control.navigate-left, .ndp-theme .reveal .control.navigate-left, .ucla-theme .reveal .control.navigate-left, .hog-theme .reveal .control.navigate-left, .samen-theme .reveal .control.navigate-left, .rdam-theme .reveal .control.navigate-left, .erasmus-theme .reveal .control.navigate-left, .curarata-theme .reveal .control.navigate-left, .fiat-prof-theme .reveal .control.navigate-left, .saltro-theme .reveal .control.navigate-left, .klebowax-theme .reveal .control.navigate-left {
+.example-theme .reveal .control.navigate-left, .contact-theme .reveal .control.navigate-left, .clients .reveal .control.navigate-left, .over-oscar .reveal .control.navigate-left, .ndp-theme .reveal .control.navigate-left, .ucla-theme .reveal .control.navigate-left, .hog-theme .reveal .control.navigate-left, .samen-theme .reveal .control.navigate-left, .rdam-theme .reveal .control.navigate-left, .erasmus-theme .reveal .control.navigate-left, .curarata-theme .reveal .control.navigate-left, .fiat-prof-theme .reveal .control.navigate-left, .saltro-theme .reveal .control.navigate-left, .klebowax-theme .reveal .control.navigate-left, .oo-processing-theme .reveal .control.navigate-left {
   color: #fff;
   background-image: url(../img/arrow-left-white.svg); }
-.example-theme a.leesverder, .contact-theme a.leesverder, .clients a.leesverder, .over-oscar a.leesverder, .ndp-theme a.leesverder, .ucla-theme a.leesverder, .hog-theme a.leesverder, .samen-theme a.leesverder, .rdam-theme a.leesverder, .erasmus-theme a.leesverder, .curarata-theme a.leesverder, .fiat-prof-theme a.leesverder, .saltro-theme a.leesverder, .klebowax-theme a.leesverder {
+.example-theme a.leesverder, .contact-theme a.leesverder, .clients a.leesverder, .over-oscar a.leesverder, .ndp-theme a.leesverder, .ucla-theme a.leesverder, .hog-theme a.leesverder, .samen-theme a.leesverder, .rdam-theme a.leesverder, .erasmus-theme a.leesverder, .curarata-theme a.leesverder, .fiat-prof-theme a.leesverder, .saltro-theme a.leesverder, .klebowax-theme a.leesverder, .oo-processing-theme a.leesverder {
   background-image: url(../img/arrow-leesverder-white.svg); }
-.example-theme .no-svg .reveal .control.navigate-up, .contact-theme .no-svg .reveal .control.navigate-up, .clients .no-svg .reveal .control.navigate-up, .over-oscar .no-svg .reveal .control.navigate-up, .ndp-theme .no-svg .reveal .control.navigate-up, .ucla-theme .no-svg .reveal .control.navigate-up, .hog-theme .no-svg .reveal .control.navigate-up, .samen-theme .no-svg .reveal .control.navigate-up, .rdam-theme .no-svg .reveal .control.navigate-up, .erasmus-theme .no-svg .reveal .control.navigate-up, .curarata-theme .no-svg .reveal .control.navigate-up, .fiat-prof-theme .no-svg .reveal .control.navigate-up, .saltro-theme .no-svg .reveal .control.navigate-up, .klebowax-theme .no-svg .reveal .control.navigate-up {
+.example-theme .no-svg .reveal .control.navigate-up, .contact-theme .no-svg .reveal .control.navigate-up, .clients .no-svg .reveal .control.navigate-up, .over-oscar .no-svg .reveal .control.navigate-up, .ndp-theme .no-svg .reveal .control.navigate-up, .ucla-theme .no-svg .reveal .control.navigate-up, .hog-theme .no-svg .reveal .control.navigate-up, .samen-theme .no-svg .reveal .control.navigate-up, .rdam-theme .no-svg .reveal .control.navigate-up, .erasmus-theme .no-svg .reveal .control.navigate-up, .curarata-theme .no-svg .reveal .control.navigate-up, .fiat-prof-theme .no-svg .reveal .control.navigate-up, .saltro-theme .no-svg .reveal .control.navigate-up, .klebowax-theme .no-svg .reveal .control.navigate-up, .oo-processing-theme .no-svg .reveal .control.navigate-up {
   background-image: url(../img/arrow-up-white.png); }
-.example-theme .no-svg .reveal .control.navigate-right, .contact-theme .no-svg .reveal .control.navigate-right, .clients .no-svg .reveal .control.navigate-right, .over-oscar .no-svg .reveal .control.navigate-right, .ndp-theme .no-svg .reveal .control.navigate-right, .ucla-theme .no-svg .reveal .control.navigate-right, .hog-theme .no-svg .reveal .control.navigate-right, .samen-theme .no-svg .reveal .control.navigate-right, .rdam-theme .no-svg .reveal .control.navigate-right, .erasmus-theme .no-svg .reveal .control.navigate-right, .curarata-theme .no-svg .reveal .control.navigate-right, .fiat-prof-theme .no-svg .reveal .control.navigate-right, .saltro-theme .no-svg .reveal .control.navigate-right, .klebowax-theme .no-svg .reveal .control.navigate-right {
+.example-theme .no-svg .reveal .control.navigate-right, .contact-theme .no-svg .reveal .control.navigate-right, .clients .no-svg .reveal .control.navigate-right, .over-oscar .no-svg .reveal .control.navigate-right, .ndp-theme .no-svg .reveal .control.navigate-right, .ucla-theme .no-svg .reveal .control.navigate-right, .hog-theme .no-svg .reveal .control.navigate-right, .samen-theme .no-svg .reveal .control.navigate-right, .rdam-theme .no-svg .reveal .control.navigate-right, .erasmus-theme .no-svg .reveal .control.navigate-right, .curarata-theme .no-svg .reveal .control.navigate-right, .fiat-prof-theme .no-svg .reveal .control.navigate-right, .saltro-theme .no-svg .reveal .control.navigate-right, .klebowax-theme .no-svg .reveal .control.navigate-right, .oo-processing-theme .no-svg .reveal .control.navigate-right {
   background-image: url(../img/arrow-right-white.png); }
-.example-theme .no-svg .reveal .control.navigate-down, .contact-theme .no-svg .reveal .control.navigate-down, .clients .no-svg .reveal .control.navigate-down, .over-oscar .no-svg .reveal .control.navigate-down, .ndp-theme .no-svg .reveal .control.navigate-down, .ucla-theme .no-svg .reveal .control.navigate-down, .hog-theme .no-svg .reveal .control.navigate-down, .samen-theme .no-svg .reveal .control.navigate-down, .rdam-theme .no-svg .reveal .control.navigate-down, .erasmus-theme .no-svg .reveal .control.navigate-down, .curarata-theme .no-svg .reveal .control.navigate-down, .fiat-prof-theme .no-svg .reveal .control.navigate-down, .saltro-theme .no-svg .reveal .control.navigate-down, .klebowax-theme .no-svg .reveal .control.navigate-down {
+.example-theme .no-svg .reveal .control.navigate-down, .contact-theme .no-svg .reveal .control.navigate-down, .clients .no-svg .reveal .control.navigate-down, .over-oscar .no-svg .reveal .control.navigate-down, .ndp-theme .no-svg .reveal .control.navigate-down, .ucla-theme .no-svg .reveal .control.navigate-down, .hog-theme .no-svg .reveal .control.navigate-down, .samen-theme .no-svg .reveal .control.navigate-down, .rdam-theme .no-svg .reveal .control.navigate-down, .erasmus-theme .no-svg .reveal .control.navigate-down, .curarata-theme .no-svg .reveal .control.navigate-down, .fiat-prof-theme .no-svg .reveal .control.navigate-down, .saltro-theme .no-svg .reveal .control.navigate-down, .klebowax-theme .no-svg .reveal .control.navigate-down, .oo-processing-theme .no-svg .reveal .control.navigate-down {
   background-image: url(../img/arrow-down-white.png); }
-.example-theme .no-svg .reveal .control.navigate-left, .contact-theme .no-svg .reveal .control.navigate-left, .clients .no-svg .reveal .control.navigate-left, .over-oscar .no-svg .reveal .control.navigate-left, .ndp-theme .no-svg .reveal .control.navigate-left, .ucla-theme .no-svg .reveal .control.navigate-left, .hog-theme .no-svg .reveal .control.navigate-left, .samen-theme .no-svg .reveal .control.navigate-left, .rdam-theme .no-svg .reveal .control.navigate-left, .erasmus-theme .no-svg .reveal .control.navigate-left, .curarata-theme .no-svg .reveal .control.navigate-left, .fiat-prof-theme .no-svg .reveal .control.navigate-left, .saltro-theme .no-svg .reveal .control.navigate-left, .klebowax-theme .no-svg .reveal .control.navigate-left {
+.example-theme .no-svg .reveal .control.navigate-left, .contact-theme .no-svg .reveal .control.navigate-left, .clients .no-svg .reveal .control.navigate-left, .over-oscar .no-svg .reveal .control.navigate-left, .ndp-theme .no-svg .reveal .control.navigate-left, .ucla-theme .no-svg .reveal .control.navigate-left, .hog-theme .no-svg .reveal .control.navigate-left, .samen-theme .no-svg .reveal .control.navigate-left, .rdam-theme .no-svg .reveal .control.navigate-left, .erasmus-theme .no-svg .reveal .control.navigate-left, .curarata-theme .no-svg .reveal .control.navigate-left, .fiat-prof-theme .no-svg .reveal .control.navigate-left, .saltro-theme .no-svg .reveal .control.navigate-left, .klebowax-theme .no-svg .reveal .control.navigate-left, .oo-processing-theme .no-svg .reveal .control.navigate-left {
   background-image: url(../img/arrow-left-white.png); }
-.example-theme .no-svg a.leesverder, .contact-theme .no-svg a.leesverder, .clients .no-svg a.leesverder, .over-oscar .no-svg a.leesverder, .ndp-theme .no-svg a.leesverder, .ucla-theme .no-svg a.leesverder, .hog-theme .no-svg a.leesverder, .samen-theme .no-svg a.leesverder, .rdam-theme .no-svg a.leesverder, .erasmus-theme .no-svg a.leesverder, .curarata-theme .no-svg a.leesverder, .fiat-prof-theme .no-svg a.leesverder, .saltro-theme .no-svg a.leesverder, .klebowax-theme .no-svg a.leesverder {
+.example-theme .no-svg a.leesverder, .contact-theme .no-svg a.leesverder, .clients .no-svg a.leesverder, .over-oscar .no-svg a.leesverder, .ndp-theme .no-svg a.leesverder, .ucla-theme .no-svg a.leesverder, .hog-theme .no-svg a.leesverder, .samen-theme .no-svg a.leesverder, .rdam-theme .no-svg a.leesverder, .erasmus-theme .no-svg a.leesverder, .curarata-theme .no-svg a.leesverder, .fiat-prof-theme .no-svg a.leesverder, .saltro-theme .no-svg a.leesverder, .klebowax-theme .no-svg a.leesverder, .oo-processing-theme .no-svg a.leesverder {
   background-image: url(../img/arrow-leesverder-white.png); }
 
 /*
@@ -538,23 +538,23 @@ a.leesverder {
   background-image: url(../img/icon-close-black.png);
   text-decoration: none; }
 
-.example-theme .flip-bt > div, .sos-theme .flip-bt > div, .contact-theme .flip-bt > div, .over-oscar .flip-bt > div, .ndp-theme .flip-bt > div, .ucla-theme .flip-bt > div, .hog-theme .flip-bt > div, .samen-theme .flip-bt > div, .rdam-theme .flip-bt > div, .erasmus-theme .flip-bt > div, .curarata-theme .flip-bt > div, .fiat-prof-theme .flip-bt > div, .saltro-theme .flip-bt > div {
+.example-theme .flip-bt > div, .sos-theme .flip-bt > div, .contact-theme .flip-bt > div, .over-oscar .flip-bt > div, .ndp-theme .flip-bt > div, .ucla-theme .flip-bt > div, .hog-theme .flip-bt > div, .samen-theme .flip-bt > div, .rdam-theme .flip-bt > div, .erasmus-theme .flip-bt > div, .curarata-theme .flip-bt > div, .fiat-prof-theme .flip-bt > div, .saltro-theme .flip-bt > div, .oo-processing-theme .flip-bt > div {
   background-image: url(../img/flip-video-white.svg); }
-  .example-theme .flip-bt > div.video, .sos-theme .flip-bt > div.video, .contact-theme .flip-bt > div.video, .over-oscar .flip-bt > div.video, .ndp-theme .flip-bt > div.video, .ucla-theme .flip-bt > div.video, .hog-theme .flip-bt > div.video, .samen-theme .flip-bt > div.video, .rdam-theme .flip-bt > div.video, .erasmus-theme .flip-bt > div.video, .curarata-theme .flip-bt > div.video, .fiat-prof-theme .flip-bt > div.video, .saltro-theme .flip-bt > div.video {
+  .example-theme .flip-bt > div.video, .sos-theme .flip-bt > div.video, .contact-theme .flip-bt > div.video, .over-oscar .flip-bt > div.video, .ndp-theme .flip-bt > div.video, .ucla-theme .flip-bt > div.video, .hog-theme .flip-bt > div.video, .samen-theme .flip-bt > div.video, .rdam-theme .flip-bt > div.video, .erasmus-theme .flip-bt > div.video, .curarata-theme .flip-bt > div.video, .fiat-prof-theme .flip-bt > div.video, .saltro-theme .flip-bt > div.video, .oo-processing-theme .flip-bt > div.video {
     background-image: url(../img/flip-video-white.svg); }
-  .example-theme .flip-bt > div.slideshow, .sos-theme .flip-bt > div.slideshow, .contact-theme .flip-bt > div.slideshow, .over-oscar .flip-bt > div.slideshow, .ndp-theme .flip-bt > div.slideshow, .ucla-theme .flip-bt > div.slideshow, .hog-theme .flip-bt > div.slideshow, .samen-theme .flip-bt > div.slideshow, .rdam-theme .flip-bt > div.slideshow, .erasmus-theme .flip-bt > div.slideshow, .curarata-theme .flip-bt > div.slideshow, .fiat-prof-theme .flip-bt > div.slideshow, .saltro-theme .flip-bt > div.slideshow {
+  .example-theme .flip-bt > div.slideshow, .sos-theme .flip-bt > div.slideshow, .contact-theme .flip-bt > div.slideshow, .over-oscar .flip-bt > div.slideshow, .ndp-theme .flip-bt > div.slideshow, .ucla-theme .flip-bt > div.slideshow, .hog-theme .flip-bt > div.slideshow, .samen-theme .flip-bt > div.slideshow, .rdam-theme .flip-bt > div.slideshow, .erasmus-theme .flip-bt > div.slideshow, .curarata-theme .flip-bt > div.slideshow, .fiat-prof-theme .flip-bt > div.slideshow, .saltro-theme .flip-bt > div.slideshow, .oo-processing-theme .flip-bt > div.slideshow {
     background-image: url(../img/flip-slideshow-white.svg); }
-.example-theme .no-svg .flip-bt > div, .sos-theme .no-svg .flip-bt > div, .contact-theme .no-svg .flip-bt > div, .over-oscar .no-svg .flip-bt > div, .ndp-theme .no-svg .flip-bt > div, .ucla-theme .no-svg .flip-bt > div, .hog-theme .no-svg .flip-bt > div, .samen-theme .no-svg .flip-bt > div, .rdam-theme .no-svg .flip-bt > div, .erasmus-theme .no-svg .flip-bt > div, .curarata-theme .no-svg .flip-bt > div, .fiat-prof-theme .no-svg .flip-bt > div, .saltro-theme .no-svg .flip-bt > div {
+.example-theme .no-svg .flip-bt > div, .sos-theme .no-svg .flip-bt > div, .contact-theme .no-svg .flip-bt > div, .over-oscar .no-svg .flip-bt > div, .ndp-theme .no-svg .flip-bt > div, .ucla-theme .no-svg .flip-bt > div, .hog-theme .no-svg .flip-bt > div, .samen-theme .no-svg .flip-bt > div, .rdam-theme .no-svg .flip-bt > div, .erasmus-theme .no-svg .flip-bt > div, .curarata-theme .no-svg .flip-bt > div, .fiat-prof-theme .no-svg .flip-bt > div, .saltro-theme .no-svg .flip-bt > div, .oo-processing-theme .no-svg .flip-bt > div {
   background-image: url(../img/flip-video-white.png); }
-  .example-theme .no-svg .flip-bt > div.video, .sos-theme .no-svg .flip-bt > div.video, .contact-theme .no-svg .flip-bt > div.video, .over-oscar .no-svg .flip-bt > div.video, .ndp-theme .no-svg .flip-bt > div.video, .ucla-theme .no-svg .flip-bt > div.video, .hog-theme .no-svg .flip-bt > div.video, .samen-theme .no-svg .flip-bt > div.video, .rdam-theme .no-svg .flip-bt > div.video, .erasmus-theme .no-svg .flip-bt > div.video, .curarata-theme .no-svg .flip-bt > div.video, .fiat-prof-theme .no-svg .flip-bt > div.video, .saltro-theme .no-svg .flip-bt > div.video {
+  .example-theme .no-svg .flip-bt > div.video, .sos-theme .no-svg .flip-bt > div.video, .contact-theme .no-svg .flip-bt > div.video, .over-oscar .no-svg .flip-bt > div.video, .ndp-theme .no-svg .flip-bt > div.video, .ucla-theme .no-svg .flip-bt > div.video, .hog-theme .no-svg .flip-bt > div.video, .samen-theme .no-svg .flip-bt > div.video, .rdam-theme .no-svg .flip-bt > div.video, .erasmus-theme .no-svg .flip-bt > div.video, .curarata-theme .no-svg .flip-bt > div.video, .fiat-prof-theme .no-svg .flip-bt > div.video, .saltro-theme .no-svg .flip-bt > div.video, .oo-processing-theme .no-svg .flip-bt > div.video {
     background-image: url(../img/flip-video-white.png); }
-  .example-theme .no-svg .flip-bt > div.slideshow, .sos-theme .no-svg .flip-bt > div.slideshow, .contact-theme .no-svg .flip-bt > div.slideshow, .over-oscar .no-svg .flip-bt > div.slideshow, .ndp-theme .no-svg .flip-bt > div.slideshow, .ucla-theme .no-svg .flip-bt > div.slideshow, .hog-theme .no-svg .flip-bt > div.slideshow, .samen-theme .no-svg .flip-bt > div.slideshow, .rdam-theme .no-svg .flip-bt > div.slideshow, .erasmus-theme .no-svg .flip-bt > div.slideshow, .curarata-theme .no-svg .flip-bt > div.slideshow, .fiat-prof-theme .no-svg .flip-bt > div.slideshow, .saltro-theme .no-svg .flip-bt > div.slideshow {
+  .example-theme .no-svg .flip-bt > div.slideshow, .sos-theme .no-svg .flip-bt > div.slideshow, .contact-theme .no-svg .flip-bt > div.slideshow, .over-oscar .no-svg .flip-bt > div.slideshow, .ndp-theme .no-svg .flip-bt > div.slideshow, .ucla-theme .no-svg .flip-bt > div.slideshow, .hog-theme .no-svg .flip-bt > div.slideshow, .samen-theme .no-svg .flip-bt > div.slideshow, .rdam-theme .no-svg .flip-bt > div.slideshow, .erasmus-theme .no-svg .flip-bt > div.slideshow, .curarata-theme .no-svg .flip-bt > div.slideshow, .fiat-prof-theme .no-svg .flip-bt > div.slideshow, .saltro-theme .no-svg .flip-bt > div.slideshow, .oo-processing-theme .no-svg .flip-bt > div.slideshow {
     background-image: url(../img/flip-slideshow-white.png); }
 
-.ndp-theme .flip .close a, .ucla-theme .flip .close a, .hog-theme .flip .close a, .samen-theme .flip .close a, .rdam-theme .flip .close a, .erasmus-theme .flip .close a, .curarata-theme .flip .close a, .fiat-prof-theme .flip .close a, .saltro-theme .flip .close a, .klebowax-theme .flip .close a {
+.ndp-theme .flip .close a, .ucla-theme .flip .close a, .hog-theme .flip .close a, .samen-theme .flip .close a, .rdam-theme .flip .close a, .erasmus-theme .flip .close a, .curarata-theme .flip .close a, .fiat-prof-theme .flip .close a, .saltro-theme .flip .close a, .klebowax-theme .flip .close a, .oo-processing-theme .flip .close a {
   background-image: url(../img/icon-close-white.svg);
   text-decoration: none; }
-.ndp-theme .no-svg .flip .close a, .ucla-theme .no-svg .flip .close a, .hog-theme .no-svg .flip .close a, .samen-theme .no-svg .flip .close a, .rdam-theme .no-svg .flip .close a, .erasmus-theme .no-svg .flip .close a, .curarata-theme .no-svg .flip .close a, .fiat-prof-theme .no-svg .flip .close a, .saltro-theme .no-svg .flip .close a, .klebowax-theme .no-svg .flip .close a {
+.ndp-theme .no-svg .flip .close a, .ucla-theme .no-svg .flip .close a, .hog-theme .no-svg .flip .close a, .samen-theme .no-svg .flip .close a, .rdam-theme .no-svg .flip .close a, .erasmus-theme .no-svg .flip .close a, .curarata-theme .no-svg .flip .close a, .fiat-prof-theme .no-svg .flip .close a, .saltro-theme .no-svg .flip .close a, .klebowax-theme .no-svg .flip .close a, .oo-processing-theme .no-svg .flip .close a {
   background-image: url(../img/icon-close-white.png);
   text-decoration: none; }
 
@@ -696,7 +696,11 @@ header {
 .klebowax-theme .control.navigate-right,
 .klebowax-theme .control.navigate-down,
 .klebowax-theme .control.navigate-left,
-.klebowax-theme a.leesverder, .klebowax-theme .flip .close a, .klebowax-theme .flip-bt div {
+.klebowax-theme a.leesverder, .klebowax-theme .flip .close a, .klebowax-theme .flip-bt div, .oo-processing-theme .control.navigate-up,
+.oo-processing-theme .control.navigate-right,
+.oo-processing-theme .control.navigate-down,
+.oo-processing-theme .control.navigate-left,
+.oo-processing-theme a.leesverder, .oo-processing-theme .flip .close a, .oo-processing-theme .flip-bt div {
   -moz-transition: background-color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
@@ -3185,6 +3189,168 @@ header {
 
 .reveal.overview section[data-state*='klebowax-theme'].present {
   background: #d25ba0; }
+
+/*
+	////////////////////////////////////////////////////////////////
+*/
+/*
+	////////////////////////////////////////////////////////////////
+*/
+/*
+	////////////////////////////////////////////////////////////////
+*/
+.oo-processing-theme ::selection {
+  background: #000;
+  color: #FFF; }
+.oo-processing-theme body {
+  background-color: #babab2; }
+.oo-processing-theme a {
+  color: #000;
+  border-bottom-color: #000; }
+  .oo-processing-theme a:hover {
+    background-color: #000;
+    color: #fff; }
+.oo-processing-theme .list {
+  background-color: #666666; }
+  .oo-processing-theme .list li:hover {
+    background-color: #4d4d4d;
+    color: #000; }
+.oo-processing-theme.home .bg, .oo-processing-theme.content-clients .bg {
+  background-image: url("/");
+  width: 960px;
+  height: 600px; }
+.oo-processing-theme.home h1, .oo-processing-theme.home h2, .oo-processing-theme.home header nav > ul > li > a, header .oo-processing-theme.home nav > ul > li > a, .oo-processing-theme.home p, .oo-processing-theme.content-clients h1, .oo-processing-theme.content-clients h2, .oo-processing-theme.content-clients header nav > ul > li > a, header .oo-processing-theme.content-clients nav > ul > li > a, .oo-processing-theme.content-clients p {
+  z-index: 9;
+  background-color: #FFF;
+  color: #000; }
+.oo-processing-theme.home h2, .oo-processing-theme.home header nav > ul > li > a, header .oo-processing-theme.home nav > ul > li > a, .oo-processing-theme.content-clients h2, .oo-processing-theme.content-clients header nav > ul > li > a, header .oo-processing-theme.content-clients nav > ul > li > a {
+  color: #007d66; }
+.oo-processing-theme h1, .oo-processing-theme h2, .oo-processing-theme header nav > ul > li > a, header .oo-processing-theme nav > ul > li > a, .oo-processing-theme h3, .oo-processing-theme h4, .oo-processing-theme h5, .oo-processing-theme html.slideshow .custom-caption, html.slideshow .oo-processing-theme .custom-caption, .oo-processing-theme p {
+  color: #000; }
+.oo-processing-theme nav h1, .oo-processing-theme nav h2, .oo-processing-theme header nav > ul > li > a, header .oo-processing-theme nav > ul > li > a, .oo-processing-theme nav h3, .oo-processing-theme nav h4, .oo-processing-theme nav h5, .oo-processing-theme nav html.slideshow .custom-caption, html.slideshow .oo-processing-theme nav .custom-caption, .oo-processing-theme nav p, .oo-processing-theme nav {
+  color: #393934; }
+  .oo-processing-theme nav h1 a, .oo-processing-theme nav h2 a, .oo-processing-theme header nav > ul > li > a a, header .oo-processing-theme nav > ul > li > a a, .oo-processing-theme nav h3 a, .oo-processing-theme nav h4 a, .oo-processing-theme nav h5 a, .oo-processing-theme nav html.slideshow .custom-caption a, html.slideshow .oo-processing-theme nav .custom-caption a, .oo-processing-theme nav p a, .oo-processing-theme nav a {
+    border-bottom: 0px dotted #fff; }
+    .oo-processing-theme nav h1 a:hover, .oo-processing-theme nav h2 a:hover, .oo-processing-theme header nav > ul > li > a a:hover, header .oo-processing-theme nav > ul > li > a a:hover, .oo-processing-theme nav h3 a:hover, .oo-processing-theme nav h4 a:hover, .oo-processing-theme nav h5 a:hover, .oo-processing-theme nav html.slideshow .custom-caption a:hover, html.slideshow .oo-processing-theme nav .custom-caption a:hover, .oo-processing-theme nav p a:hover, .oo-processing-theme nav a:hover {
+      background-color: transparent;
+      color: #000;
+      border-bottom: 0px dotted #fff; }
+.oo-processing-theme.content-image-txt article {
+  background-color: white;
+  color: #000; }
+  .oo-processing-theme.content-image-txt article ::selection {
+    background: #000;
+    color: #fff; }
+  .oo-processing-theme.content-image-txt article h3 {
+    color: #000; }
+  .oo-processing-theme.content-image-txt article h4 {
+    color: #000; }
+.oo-processing-theme.content-bg-txt-insert article .inhoud {
+  position: absolute;
+  background-color: white;
+  color: #000;
+  padding: 30px 0 10px 0;
+  width: 480px; }
+  .oo-processing-theme.content-bg-txt-insert article .inhoud ::selection {
+    background: #000;
+    color: #fff; }
+  .oo-processing-theme.content-bg-txt-insert article .inhoud.right {
+    right: 0px; }
+  .oo-processing-theme.content-bg-txt-insert article .inhoud.bottom {
+    bottom: 0px; }
+  .oo-processing-theme.content-bg-txt-insert article .inhoud.inside {
+    margin: 25px;
+    width: 455px; }
+  .oo-processing-theme.content-bg-txt-insert article .inhoud.outside {
+    margin: -25px;
+    width: 505px; }
+.oo-processing-theme.content-bg-txt-insert article h4 {
+  color: #007d66; }
+.oo-processing-theme.content-bg-txt-bottom article .inhoud {
+  position: absolute;
+  width: 880px;
+  bottom: 0px;
+  padding: 0; }
+  .oo-processing-theme.content-bg-txt-bottom article .inhoud.small h5, .oo-processing-theme.content-bg-txt-bottom article .inhoud.small html.slideshow .custom-caption, html.slideshow .oo-processing-theme.content-bg-txt-bottom article .inhoud.small .custom-caption {
+    padding: 0 0 40px 0;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase; }
+  .oo-processing-theme.content-bg-txt-bottom article .inhoud.center {
+    width: 960px;
+    text-align: center; }
+  .oo-processing-theme.content-bg-txt-bottom article .inhoud h3 {
+    padding: 30px 0 0 0; }
+  .oo-processing-theme.content-bg-txt-bottom article .inhoud h4 {
+    padding: 0 0 20px 0; }
+  .oo-processing-theme.content-bg-txt-bottom article .inhoud h5, .oo-processing-theme.content-bg-txt-bottom article .inhoud html.slideshow .custom-caption, html.slideshow .oo-processing-theme.content-bg-txt-bottom article .inhoud .custom-caption {
+    padding: 0 0 20px 0; }
+  .oo-processing-theme.content-bg-txt-bottom article .inhoud p {
+    padding: 0; }
+.oo-processing-theme .control.navigate-up,
+.oo-processing-theme .control.navigate-right,
+.oo-processing-theme .control.navigate-down,
+.oo-processing-theme .control.navigate-left,
+.oo-processing-theme a.leesverder {
+  background-color: #8a8a7c;
+  border: none; }
+  .oo-processing-theme .control.navigate-up:hover,
+  .oo-processing-theme .control.navigate-right:hover,
+  .oo-processing-theme .control.navigate-down:hover,
+  .oo-processing-theme .control.navigate-left:hover,
+  .oo-processing-theme a.leesverder:hover {
+    background-color: #54544c; }
+.oo-processing-theme .control.navigate-down, .oo-processing-theme a.leesverder {
+  background-color: #8a8a7c; }
+  .oo-processing-theme .control.navigate-down:hover, .oo-processing-theme a.leesverder:hover {
+    background-color: #54544c; }
+.oo-processing-theme .flip {
+  background-color: #babab2;
+  color: #000; }
+  .oo-processing-theme .flip h3 {
+    color: #000; }
+  .oo-processing-theme .flip ::selection {
+    background: #000;
+    color: #babab2; }
+  .oo-processing-theme .flip .close a {
+    background-color: #8a8a7c;
+    border: none; }
+    .oo-processing-theme .flip .close a:hover {
+      text-decoration: none;
+      background-color: #54544c; }
+.oo-processing-theme.slideshow .custom-caption {
+  background-color: #FFF;
+  color: #000; }
+  .oo-processing-theme.slideshow .custom-caption ::selection {
+    background: #000;
+    color: #FFF; }
+.oo-processing-theme .flip-bt {
+  display: table; }
+  .oo-processing-theme .flip-bt div {
+    background-color: #a2a297; }
+    .oo-processing-theme .flip-bt div:hover {
+      background-color: #6f6f64; }
+.oo-processing-theme #oscar-over-processing-home .bg {
+  background-image: url("/nl/wp-content/uploads/oscar_over_processing.jpg"); }
+
+.reveal.overview section[data-state*='oo-processing-theme'] .thumb {
+  background: #a2a297; }
+  .reveal.overview section[data-state*='oo-processing-theme'] .thumb h2, .reveal.overview section[data-state*='oo-processing-theme'] .thumb header nav > ul > li > a, header .reveal.overview section[data-state*='oo-processing-theme'] .thumb nav > ul > li > a {
+    color: #fff; }
+
+.reveal.overview section[data-state*='oo-processing-theme'].present {
+  background: #d2d2cd; }
+
+.content-bg-txt-insert h3 {
+  color: #000; }
+.content-bg-txt-insert p {
+  color: #000; }
+
+.content-image-txt h5, .content-image-txt html.slideshow .custom-caption, html.slideshow .content-image-txt .custom-caption {
+  font-weight: 100;
+  font-size: 20px;
+  padding: 10px 30px 10px 30px;
+  color: #007d66; }
 
 /*
 	////////////////////////////////////////////////////////////////

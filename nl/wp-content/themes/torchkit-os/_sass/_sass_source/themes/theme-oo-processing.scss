@@ -1,0 +1,115 @@
+/*
+	////////////////////////////////////////////////////////////////
+*/
+// background color for body, also used in the overview
+$body-bg:							#babab2;
+
+// global color for the top navigation, contrast with $body-bg
+$nav-color-txt:						darken($body-bg, 50);
+$nav-color-txt-hover:				#000;
+
+// color for the navigation backgronds
+// the arrows are done with a extend
+// include this in the class if the arrow should be white
+// @extend %home-navigation-white;
+// 'lees verder' can have a different color
+$home-color-nav:					darken($body-bg, 20);
+$home-color-nav-hover:				darken($home-color-nav, 20);
+$home-color-nav-down:				darken($body-bg, 20);
+$home-color-nav-down-hover:			darken($home-color-nav, 20);
+
+// heading color + text color + image of first page
+// relative to in public folder, can be changed online
+// sub means the second heading, sub heading
+$home-color-heading-bg:				#FFF;
+$home-color-heading-txt:			#000;
+$home-color-heading-sub-txt:		#007d66;
+$home-bg-img:						'/';
+
+// color for the overview thumb, the present one and the text
+$thumb-color-txt:					#fff;
+$thumb-color-bg:					darken($body-bg, 10);
+$thumb-color-bg-present:			lighten($thumb-color-bg, 20);
+
+// colors of the content pages
+$content-color-txt:					#000;
+$content-color-heading-txt:			$home-color-heading-txt;
+$content-color-heading-sub-txt:		$home-color-heading-txt;
+$content-color-bg:					#fff;
+
+$content-link-bg:					$content-color-heading-txt;
+$content-link-txt:					#fff;
+
+$content-list-bg:					lighten($content-color-heading-sub-txt, 40);
+$content-list-bg-hover:				lighten($content-color-heading-sub-txt, 30);
+$content-list-txt-hover:			#000;
+
+// in the flip a heading (video)?
+// $flip-color-txt == heading txt
+// $flip-color-bg == flip background
+$flip-color-txt:					#000;
+$flip-color-bg:						$body-bg;
+
+// $flip-color-slideshow-txt == color of description
+// $flip-color-slideshow-bg == color of background
+$flip-color-slideshow-txt:			#000;
+$flip-color-slideshow-bg:			$home-color-heading-bg;
+
+// button too call the flip
+// @extend %flip-icons-white if you wnat the icon white
+$flip-color-bt:						darken($body-bg, 10);
+$flip-color-bt-hover:				darken($flip-color-bt, 20);
+
+// in the flip the 'close' / 'go back' button
+// for white close button
+// @extend %flip-close-icon-white
+$flip-color-bt-close:				$home-color-nav;
+$flip-color-bt-close-hover:			$home-color-nav-hover;
+/*
+	////////////////////////////////////////////////////////////////
+*/
+.oo-processing-theme {
+	@include theme-options;
+	@extend %home-navigation-white;
+	@extend %flip-bt-icons-white;
+	@extend %flip-close-icon-white;
+	#oscar-over-processing-home {
+		.bg {
+			background-image: url('/nl/wp-content/uploads/oscar_over_processing.jpg');
+		}
+	}
+}
+.reveal.overview section[data-state *= 'oo-processing-theme'] .thumb {
+	background: $thumb-color-bg;
+	h2 {
+		color: $thumb-color-txt;
+	}
+}
+.reveal.overview section[data-state *= 'oo-processing-theme'].present  {
+	background: $thumb-color-bg-present;
+}
+
+.content-bg-txt-insert {
+	h3 {
+		color: $home-color-heading-txt;
+	}
+	p {
+		color: #000;
+	}
+}
+
+.content-image-txt {
+	h5 {
+		font-weight: 100;
+		font-size: 20px;
+		padding: 10px 30px 10px 30px;
+		color: $home-color-heading-sub-txt;
+	}
+	p {
+		//font-size: 14px;
+		//line-height: 22px;
+	}
+}
+/*
+	////////////////////////////////////////////////////////////////
+*/
