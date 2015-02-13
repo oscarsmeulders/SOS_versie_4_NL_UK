@@ -37,7 +37,7 @@ $content-color-heading-txt:			$home-color-heading-txt;
 $content-color-heading-sub-txt:		$home-color-heading-txt;
 $content-color-bg:					#fff;
 
-$content-link-bg:					$content-color-heading-txt;
+$content-link-bg:					$home-color-heading-sub-txt;
 $content-link-txt:					#fff;
 
 $content-list-bg:					lighten($content-color-heading-sub-txt, 40);
@@ -57,8 +57,8 @@ $flip-color-slideshow-bg:			$home-color-heading-bg;
 
 // button too call the flip
 // @extend %flip-icons-white if you wnat the icon white
-$flip-color-bt:						darken($body-bg, 10);
-$flip-color-bt-hover:				darken($flip-color-bt, 20);
+$flip-color-bt:						$home-color-heading-sub-txt;
+$flip-color-bt-hover:				darken($flip-color-bt, 10);
 
 // in the flip the 'close' / 'go back' button
 // for white close button
@@ -73,6 +73,9 @@ $flip-color-bt-close-hover:			$home-color-nav-hover;
 	@extend %home-navigation-white;
 	@extend %flip-bt-icons-white;
 	@extend %flip-close-icon-white;
+	.highlight {
+		color: $home-color-heading-sub-txt;
+	}
 	#oscar-over-processing-home {
 		.bg {
 			background-image: url('/nl/wp-content/uploads/oscar_over_processing.jpg');
@@ -91,7 +94,7 @@ $flip-color-bt-close-hover:			$home-color-nav-hover;
 
 .content-bg-txt-insert {
 	h3 {
-		color: $home-color-heading-txt;
+		color: $home-color-heading-sub-txt;
 	}
 	p {
 		color: #000;
@@ -102,8 +105,16 @@ $flip-color-bt-close-hover:			$home-color-nav-hover;
 	h5 {
 		font-weight: 100;
 		font-size: 20px;
-		padding: 10px 30px 10px 30px;
+		padding: 15px 30px 5px 30px;
 		color: $home-color-heading-sub-txt;
+	}
+	h3 {
+		padding: 0px 0px 10px 30px;
+	}
+	h6 {
+		font-weight: 700;
+		padding: 20px 0px 5px 30px;
+		color: lighten($home-color-heading-txt, 80);
 	}
 	p {
 		//font-size: 14px;

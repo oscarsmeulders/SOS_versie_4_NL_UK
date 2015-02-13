@@ -3206,9 +3206,9 @@ header {
   background-color: #babab2; }
 .oo-processing-theme a {
   color: #000;
-  border-bottom-color: #000; }
+  border-bottom-color: #007d66; }
   .oo-processing-theme a:hover {
-    background-color: #000;
+    background-color: #007d66;
     color: #fff; }
 .oo-processing-theme .list {
   background-color: #666666; }
@@ -3327,9 +3327,11 @@ header {
 .oo-processing-theme .flip-bt {
   display: table; }
   .oo-processing-theme .flip-bt div {
-    background-color: #a2a297; }
+    background-color: #007d66; }
     .oo-processing-theme .flip-bt div:hover {
-      background-color: #6f6f64; }
+      background-color: #004a3c; }
+.oo-processing-theme .highlight {
+  color: #007d66; }
 .oo-processing-theme #oscar-over-processing-home .bg {
   background-image: url("/nl/wp-content/uploads/oscar_over_processing.jpg"); }
 
@@ -3342,15 +3344,21 @@ header {
   background: #d2d2cd; }
 
 .content-bg-txt-insert h3 {
-  color: #000; }
+  color: #007d66; }
 .content-bg-txt-insert p {
   color: #000; }
 
 .content-image-txt h5, .content-image-txt html.slideshow .custom-caption, html.slideshow .content-image-txt .custom-caption {
   font-weight: 100;
   font-size: 20px;
-  padding: 10px 30px 10px 30px;
+  padding: 15px 30px 5px 30px;
   color: #007d66; }
+.content-image-txt h3 {
+  padding: 0px 0px 10px 30px; }
+.content-image-txt h6 {
+  font-weight: 700;
+  padding: 20px 0px 5px 30px;
+  color: #cccccc; }
 
 /*
 	////////////////////////////////////////////////////////////////
