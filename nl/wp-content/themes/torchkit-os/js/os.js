@@ -101,6 +101,7 @@ jQuery( document ).ready(function( $ ) {
 	}
 
 	sos_home_rotate = function () {
+		clearInterval($timerStarter);
 		if ($dir == 'back'){
 			//console.log ('sos_home back');
 			sos_home_fill_divs_back();
@@ -127,6 +128,7 @@ jQuery( document ).ready(function( $ ) {
 	}
 	sos_home_rotate_stop = function () {
 		clearInterval($timer);
+		clearInterval($timerStarter);
 	};
 	$dir = 'back';
 	sos_home_fill_divs_front();

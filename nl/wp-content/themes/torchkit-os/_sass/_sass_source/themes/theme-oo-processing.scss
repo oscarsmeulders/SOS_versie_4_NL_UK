@@ -81,6 +81,38 @@ $flip-color-bt-close-hover:			$home-color-nav-hover;
 			background-image: url('/nl/wp-content/uploads/oscar_over_processing.jpg');
 		}
 	}
+
+	.content-bg-txt-insert {
+		h3 {
+			color: $home-color-heading-sub-txt;
+		}
+		p {
+			color: #000;
+		}
+	}
+
+	.content-image-txt {
+		h5 {
+			font-weight: 100;
+			font-size: 20px;
+			padding: 15px 30px 5px 30px;
+			color: $home-color-heading-sub-txt;
+		}
+		h3 {
+			padding: 0px 0px 10px 30px;
+		}
+		h6 {
+			font-weight: 700;
+			padding: 20px 0px 5px 30px;
+			color: lighten($home-color-heading-txt, 80);
+		}
+		p {
+			//font-size: 14px;
+			//line-height: 22px;
+		}
+	}
+
+
 }
 .reveal.overview section[data-state *= 'oo-processing-theme'] .thumb {
 	background: $thumb-color-bg;
@@ -92,35 +124,7 @@ $flip-color-bt-close-hover:			$home-color-nav-hover;
 	background: $thumb-color-bg-present;
 }
 
-.content-bg-txt-insert {
-	h3 {
-		color: $home-color-heading-sub-txt;
-	}
-	p {
-		color: #000;
-	}
-}
 
-.content-image-txt {
-	h5 {
-		font-weight: 100;
-		font-size: 20px;
-		padding: 15px 30px 5px 30px;
-		color: $home-color-heading-sub-txt;
-	}
-	h3 {
-		padding: 0px 0px 10px 30px;
-	}
-	h6 {
-		font-weight: 700;
-		padding: 20px 0px 5px 30px;
-		color: lighten($home-color-heading-txt, 80);
-	}
-	p {
-		//font-size: 14px;
-		//line-height: 22px;
-	}
-}
 /*
 	////////////////////////////////////////////////////////////////
 */

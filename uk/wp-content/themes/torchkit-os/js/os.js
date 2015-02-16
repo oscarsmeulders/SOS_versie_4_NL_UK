@@ -126,6 +126,7 @@ jQuery( document ).ready(function( $ ) {
 	}
 	sos_home_rotate_stop = function () {
 		clearInterval($timer);
+		clearInterval($timerStarter);
 	};
 	$dir = 'back';
 	sos_home_fill_divs_front();

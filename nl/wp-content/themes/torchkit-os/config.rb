@@ -12,9 +12,8 @@ fonts_dir = "/fonts"
 sass_dir = "/_sass"
 
 # :nested or :expanded or :compact or :compressed
-output_style = :nested
+output_style = :compressed
 
-environment = :development
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
