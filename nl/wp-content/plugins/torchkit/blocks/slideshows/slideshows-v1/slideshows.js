@@ -24,7 +24,10 @@ jQuery(function($) {
 
 	// oo-processing slideshows
 	var oo_processing_slides1 = [
-	    "<img data-cycle-title='Schetsmatig bewerken van beelden' src='/nl/wp-content/uploads/processing-02.jpg'>",
+   	    "<img data-cycle-title='Bewegende typografie' src='/nl/wp-content/uploads/hello.gif'>",
+   	    "<img data-cycle-title='Schetsmatig bewerken van beelden' src='/nl/wp-content/uploads/processing-02.jpg'>",
+   		"<img data-cycle-title='Beeldmanipulatie' src='/nl/wp-content/uploads/processing-01.jpg'>",
+
 	];
 	// call this init in the WP onActive of the slide
 	init_oo_processing_slideshow1 = function() {
@@ -40,5 +43,5 @@ jQuery(function($) {
 		$('#oo_processing-slideshow1').cycle('pause');
 	};
 	// end house of green
-	
+
 })
