@@ -78,7 +78,7 @@ $flip-color-bt-close-hover:			lighten($flip-color-bt-close, 10);
 		padding-bottom: 0;
 		color: $content-color-heading-sub-txt;
 	}
-	ul {
+	.content-image-txt ul {
 		padding-top: 0;
 		margin-top: 0;
 		margin-bottom: 20px;
@@ -86,7 +86,7 @@ $flip-color-bt-close-hover:			lighten($flip-color-bt-close, 10);
 			padding-top: 0;
 			margin-top: 0;
 			list-style: none;
-			margin-bottom: 5px;
+			margin-bottom: 10px;
 		}
 	}
 }

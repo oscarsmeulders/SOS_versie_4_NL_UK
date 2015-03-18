@@ -1,5 +1,45 @@
 jQuery( document ).ready(function( $ ) {
 
+	function convertToRange(value, srcRange, dstRange){
+		// value is outside source range return
+		if (value < srcRange[0] || value > srcRange[1]){
+			return NaN;
+		}
+
+		var srcMax = srcRange[1] - srcRange[0],
+		dstMax = dstRange[1] - dstRange[0],
+		adjValue = value - srcRange[0];
+
+		return (adjValue * dstMax / srcMax) + dstRange[0];
+
+	}
+
+	$('body').mousemove(function(e){
+		var marge_bg = 100;
+		var marge_h = 20;
+
+		var middleX = $( window ).width() / 2;
+		var middleY = $( window ).height() / 2;
+		var movedX_tmp = middleX - (e.pageX);
+		var movedY_tmp = middleY - (e.pageY);
+
+		var moved_bg_X = Math.floor( convertToRange(movedX_tmp,[-middleX , middleX],[0, -marge_bg]) );
+		var moved_bg_Y = Math.floor( convertToRange(movedY_tmp,[-middleX , middleX],[0, -marge_bg]) );
+
+		var moved_h_X = Math.floor( convertToRange(movedX_tmp,[-middleX , middleX],[-marge_h, marge_h]) );
+		var moved_h_Y = Math.floor( convertToRange(movedY_tmp,[-middleX , middleX],[marge_h, -marge_h]) );
+
+		// background
+		$('.home .bg.parallax').css('background-position', moved_bg_X + 'px ' + moved_bg_Y + 'px');
+		//headings right
+		$('.home .headings.right h1').css('right', (moved_h_X-25) + 'px ');
+		$('.home .headings.right h2').css('right', (moved_h_X-25) + 'px ');
+		//headings top
+		$('.home .headings.top h1').css('top', (moved_h_Y-25) + 'px ');
+		$('.home .headings.top h2').css('top', (moved_h_Y+30) + 'px ');
+		//console.log( moved_bg_X  );
+
+	});
 
 
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -11,7 +51,7 @@ jQuery( document ).ready(function( $ ) {
 	ga('require', 'linkid', 'linkid.js');
 	ga_onSlideChanged();
 	function ga_onSlideChanged() {
-		ga_TimeoutId = setTimeout(ga_onSlideChanged_timer, 2000);
+		ga_TimeoutId = setTimeout(ga_onSlideChanged_timer, 1000);
     }
     function ga_onSlideChanged_timer() {
 		clearTimeout(ga_TimeoutId);
