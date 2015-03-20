@@ -15,29 +15,35 @@ jQuery( document ).ready(function( $ ) {
 	}
 
 	$('body').mousemove(function(e){
-		var marge_bg = 100;
-		var marge_h = 20;
+		var marge_bg = 25;
+		var marge_h = 6;
 
 		var middleX = $( window ).width() / 2;
 		var middleY = $( window ).height() / 2;
-		var movedX_tmp = middleX - (e.pageX);
-		var movedY_tmp = middleY - (e.pageY);
+		var movedX_tmp = (middleX - (e.pageX) );
+		var movedY_tmp = (middleY - (e.pageY) );
+		var movedX_tmp_reverse = (middleX - (e.pageX) ) * -1;
+		var movedY_tmp_reverse = (middleY - (e.pageY) ) * -1;
 
-		var moved_bg_X = Math.floor( convertToRange(movedX_tmp,[-middleX , middleX],[0, -marge_bg]) );
-		var moved_bg_Y = Math.floor( convertToRange(movedY_tmp,[-middleX , middleX],[0, -marge_bg]) );
+		var moved_bg_X = Math.floor( convertToRange(movedX_tmp_reverse,[-middleX , middleX],[0, -marge_bg]) );
+		var moved_bg_Y = Math.floor( convertToRange(movedY_tmp_reverse,[-middleX , middleX],[0, -marge_bg]) );
 
 		var moved_h_X = Math.floor( convertToRange(movedX_tmp,[-middleX , middleX],[-marge_h, marge_h]) );
 		var moved_h_Y = Math.floor( convertToRange(movedY_tmp,[-middleX , middleX],[marge_h, -marge_h]) );
 
 		// background
 		$('.home .bg.parallax').css('background-position', moved_bg_X + 'px ' + moved_bg_Y + 'px');
+		//headings left
+		$('.home .headings:not(.right) h1').css('left', (moved_h_X-25) + 'px ');
+		$('.home .headings:not(.right) h2').css('left', (moved_h_X-25) + 'px ');
 		//headings right
 		$('.home .headings.right h1').css('right', (moved_h_X-25) + 'px ');
 		$('.home .headings.right h2').css('right', (moved_h_X-25) + 'px ');
 		//headings top
-		$('.home .headings.top h1').css('top', (moved_h_Y-25) + 'px ');
-		$('.home .headings.top h2').css('top', (moved_h_Y+30) + 'px ');
-		//console.log( moved_bg_X  );
+		$('.home .headings h1').css('top', (moved_h_Y-25) + 'px ');
+		$('.home .headings h2').css('top', (moved_h_Y+30) + 'px ');
+		
+		// console.log( moved_h_X + ' || ' + movedX_tmp );
 
 	});
 
