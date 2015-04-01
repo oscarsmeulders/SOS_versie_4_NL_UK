@@ -14,6 +14,12 @@ jQuery( document ).ready(function( $ ) {
 
 	}
 
+
+	window.ondeviceorientation = function(event) {
+		var delta = Math.round(event.beta);
+		//console.log (delta);
+	}
+
 	$('body').mousemove(function(e){
 		var marge_bg = 25;
 		var marge_h = 6;
@@ -30,6 +36,10 @@ jQuery( document ).ready(function( $ ) {
 
 		var moved_h_X = Math.floor( convertToRange(movedX_tmp,[-middleX , middleX],[-marge_h, marge_h]) );
 		var moved_h_Y = Math.floor( convertToRange(movedY_tmp,[-middleX , middleX],[marge_h, -marge_h]) );
+		changeElementsPositions(moved_bg_X, moved_bg_Y, moved_h_X, moved_h_Y);
+
+	});
+	function changeElementsPositions(moved_bg_X, moved_bg_Y, moved_h_X, moved_h_Y) {
 
 		// background
 		$('.home .bg.parallax').css('background-position', moved_bg_X + 'px ' + moved_bg_Y + 'px');
@@ -42,11 +52,9 @@ jQuery( document ).ready(function( $ ) {
 		//headings top
 		$('.home .headings h1').css('top', (moved_h_Y-25) + 'px ');
 		$('.home .headings h2').css('top', (moved_h_Y+30) + 'px ');
-		
+
 		// console.log( moved_h_X + ' || ' + movedX_tmp );
-
-	});
-
+	}
 
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
