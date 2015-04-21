@@ -15,6 +15,11 @@ if(!is_page() && !is_single()) {
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <meta name="description" content="Oscar Smeulders staat voor interactie-ontwerp en liefde voor design. Experimenteren, buiten de lijnen denken en ondernemen, kenmerken zijn stijl." />
+	<meta name="keywords" content="Oscar Smeulders, oscar smulders, grafisch ontwerp, graphic designer, websites, banners, edm, interaction, interactie, processing, den haag, the hague, rotterdam" />
+	<meta name="author" content="Oscar Smeulders" />
+
     <title><?php wp_title( '|', true, 'right' ); ?> <?php bloginfo('name'); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
