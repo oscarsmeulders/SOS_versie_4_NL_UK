@@ -1,16 +1,71 @@
 jQuery( document ).ready(function( $ ) {
 
+	function convertToRange(value, srcRange, dstRange){
+		// value is outside source range return
+		if (value < srcRange[0] || value > srcRange[1]){
+			return NaN;
+		}
+
+		var srcMax = srcRange[1] - srcRange[0],
+		dstMax = dstRange[1] - dstRange[0],
+		adjValue = value - srcRange[0];
+
+		return (adjValue * dstMax / srcMax) + dstRange[0];
+
+	}
+
+
+	window.ondeviceorientation = function(event) {
+		var delta = Math.round(event.beta);
+		//console.log (delta);
+	}
+
+	$('body').mousemove(function(e){
+		var marge_bg = 25;
+		var marge_h = 6;
+
+		var middleX = $( window ).width() / 2;
+		var middleY = $( window ).height() / 2;
+		var movedX_tmp = (middleX - (e.pageX) );
+		var movedY_tmp = (middleY - (e.pageY) );
+		var movedX_tmp_reverse = (middleX - (e.pageX) ) * -1;
+		var movedY_tmp_reverse = (middleY - (e.pageY) ) * -1;
+
+		var moved_bg_X = Math.floor( convertToRange(movedX_tmp_reverse,[-middleX , middleX],[0, -marge_bg]) );
+		var moved_bg_Y = Math.floor( convertToRange(movedY_tmp_reverse,[-middleX , middleX],[0, -marge_bg]) );
+
+		var moved_h_X = Math.floor( convertToRange(movedX_tmp,[-middleX , middleX],[-marge_h, marge_h]) );
+		var moved_h_Y = Math.floor( convertToRange(movedY_tmp,[-middleX , middleX],[marge_h, -marge_h]) );
+		changeElementsPositions(moved_bg_X, moved_bg_Y, moved_h_X, moved_h_Y);
+
+	});
+	function changeElementsPositions(moved_bg_X, moved_bg_Y, moved_h_X, moved_h_Y) {
+
+		// background
+		$('.home .bg.parallax').css('background-position', moved_bg_X + 'px ' + moved_bg_Y + 'px');
+		//headings left
+		$('.home .headings:not(.right) h1').css('left', (moved_h_X-25) + 'px ');
+		$('.home .headings:not(.right) h2').css('left', (moved_h_X-25) + 'px ');
+		//headings right
+		$('.home .headings.right h1').css('right', (moved_h_X-25) + 'px ');
+		$('.home .headings.right h2').css('right', (moved_h_X-25) + 'px ');
+		//headings top
+		$('.home .headings h1').css('top', (moved_h_Y-25) + 'px ');
+		$('.home .headings h2').css('top', (moved_h_Y+30) + 'px ');
+
+		// console.log( moved_h_X + ' || ' + movedX_tmp );
+	}
 
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-58690391-1', 'auto');
+	ga('create', 'UA-9620542-2', 'auto');
 	ga('require', 'linkid', 'linkid.js');
 	ga_onSlideChanged();
 	function ga_onSlideChanged() {
-		ga_TimeoutId = setTimeout(ga_onSlideChanged_timer, 2000);
+		ga_TimeoutId = setTimeout(ga_onSlideChanged_timer, 1000);
     }
     function ga_onSlideChanged_timer() {
 		clearTimeout(ga_TimeoutId);
@@ -33,11 +88,36 @@ jQuery( document ).ready(function( $ ) {
 	rndimg = function(amount) {
 		return Math.floor((Math.random() * amount));
 	}
+
+	rndCheck2x2 = function(amount) {
+		var $tmp = Math.floor((Math.random() * amount));
+		//console.log( $tmp );
+		if ($tmp <= 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	////////////////////////////////////////////////////////////////////////////////
 	function Shuffle(o) {
 		for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 		return o;
 	};
+	$home_2x2_imageUrl = new Array (
+		"/nl/wp-content/uploads/home_bloks/2x2_a",
+		"/nl/wp-content/uploads/home_bloks/2x2_b",
+		"/nl/wp-content/uploads/home_bloks/2x2_c",
+		"/nl/wp-content/uploads/home_bloks/2x2_d",
+		"/nl/wp-content/uploads/home_bloks/2x2_e",
+		"/nl/wp-content/uploads/home_bloks/2x2_f",
+		"/nl/wp-content/uploads/home_bloks/2x2_g",
+		"/nl/wp-content/uploads/home_bloks/2x2_h",
+		"/nl/wp-content/uploads/home_bloks/2x2_i",
+		"/nl/wp-content/uploads/home_bloks/2x2_j",
+		"/nl/wp-content/uploads/home_bloks/2x2_k"
+	);
+
 	$home_imageUrl = new Array (
 		"/nl/wp-content/uploads/home_1.jpg",
 		"/nl/wp-content/uploads/home_2.jpg",
@@ -46,11 +126,11 @@ jQuery( document ).ready(function( $ ) {
 		"/nl/wp-content/uploads/home_5.jpg",
 		"/nl/wp-content/uploads/home_6.jpg",
 		"/nl/wp-content/uploads/home_7.jpg",
-		"/nl/wp-content/uploads/home_8.jpg",
+
 		"/nl/wp-content/uploads/home_9.jpg",
 		"/nl/wp-content/uploads/home_10.jpg",
 		"/nl/wp-content/uploads/home_11.jpg",
-		"/nl/wp-content/uploads/home_12.jpg",
+
 		"/nl/wp-content/uploads/home_13.jpg",
 		"/nl/wp-content/uploads/home_14.jpg",
 		"/nl/wp-content/uploads/home_15.jpg",
@@ -59,24 +139,24 @@ jQuery( document ).ready(function( $ ) {
 		"/nl/wp-content/uploads/home_18.jpg",
 		"/nl/wp-content/uploads/home_19.jpg",
 		"/nl/wp-content/uploads/home_20.jpg",
-		"/nl/wp-content/uploads/home_21.jpg",
+
 		"/nl/wp-content/uploads/home_22.jpg",
 		"/nl/wp-content/uploads/home_23.jpg",
 		"/nl/wp-content/uploads/home_24.jpg",
 		"/nl/wp-content/uploads/home_25.jpg",
 		"/nl/wp-content/uploads/home_26.jpg",
 		"/nl/wp-content/uploads/home_27.jpg",
-		"/nl/wp-content/uploads/home_28.jpg",
+
 		"/nl/wp-content/uploads/home_29.jpg",
 		"/nl/wp-content/uploads/home_30.jpg",
 		"/nl/wp-content/uploads/home_31.jpg",
 		"/nl/wp-content/uploads/home_32.jpg",
-		"/nl/wp-content/uploads/home_33.jpg",
+
 		"/nl/wp-content/uploads/home_34.jpg",
 		"/nl/wp-content/uploads/home_35.jpg",
 		"/nl/wp-content/uploads/home_36.jpg",
 		"/nl/wp-content/uploads/home_37.jpg",
-		"/nl/wp-content/uploads/home_38.jpg",
+
 		"/nl/wp-content/uploads/home_39.jpg",
 		"/nl/wp-content/uploads/home_40.jpg",
 		"/nl/wp-content/uploads/home_41.jpg",
@@ -99,10 +179,80 @@ jQuery( document ).ready(function( $ ) {
 		});
 	}
 
+	sos_home_fill_divs_back_2x2 = function () {
+		Shuffle($home_imageUrl);
+		Shuffle($home_2x2_imageUrl);
+
+		sos_add_photos_2x2_to_back_or_front('div.back');
+	}
+	sos_home_fill_divs_front_2x2 = function () {
+		Shuffle($home_imageUrl);
+		Shuffle($home_2x2_imageUrl);
+		sos_add_photos_2x2_to_back_or_front('div.front');
+	}
+	/////////////////////
+	sos_add_photos_2x2_to_back_or_front = function (who) {
+		var $nr_li = $('.sos-theme.content-image-txt li').length;
+		var $pos = Math.floor((Math.random() * 3));
+
+		if ($pos == 0) {
+			// first position == top right
+			$('.sos-theme.content-image-txt li:eq(0)').find(who).css('background-image', 'url(' + $home_2x2_imageUrl[0] + '/blok_tl.jpg)');
+			$('.sos-theme.content-image-txt li:eq(1)').find(who).css('background-image', 'url(' + $home_2x2_imageUrl[0] + '/blok_tr.jpg)');
+			$('.sos-theme.content-image-txt li:eq(2)').find(who).css('background-image', 'url(' + $home_2x2_imageUrl[0] + '/blok_bl.jpg)');
+			$('.sos-theme.content-image-txt li:eq(3)').find(who).css('background-image', 'url(' + $home_2x2_imageUrl[0] + '/blok_br.jpg)');
+			for (var i = 4; i < $nr_li; i++) {
+				$('.sos-theme.content-image-txt li:eq('+i+')').find(who).css('background-image', 'url(' + $home_imageUrl[i] + ')');
+			}
+			// end first position == top right
+
+		} else if ($pos == 1) {
+			// first position == bottom left
+			$('.sos-theme.content-image-txt li:eq(4)').find(who).css('background-image', 'url(' + $home_2x2_imageUrl[0] + '/blok_tl.jpg)');
+			$('.sos-theme.content-image-txt li:eq(5)').find(who).css('background-image', 'url(' + $home_2x2_imageUrl[0] + '/blok_tr.jpg)');
+			$('.sos-theme.content-image-txt li:eq(8)').find(who).css('background-image', 'url(' + $home_2x2_imageUrl[0] + '/blok_bl.jpg)');
+			$('.sos-theme.content-image-txt li:eq(9)').find(who).css('background-image', 'url(' + $home_2x2_imageUrl[0] + '/blok_br.jpg)');
+			for (var i = 0; i < 4; i++) {
+				$('.sos-theme.content-image-txt li:eq('+i+')').find(who).css('background-image', 'url(' + $home_imageUrl[i] + ')');
+			}
+			for (var i = 6; i < 8; i++) {
+				$('.sos-theme.content-image-txt li:eq('+i+')').find(who).css('background-image', 'url(' + $home_imageUrl[i] + ')');
+			}
+			for (var i = 10; i < $nr_li; i++) {
+				$('.sos-theme.content-image-txt li:eq('+i+')').find(who).css('background-image', 'url(' + $home_imageUrl[i] + ')');
+			}
+			// end first position == bottom left
+
+		} else if ($pos == 2) {
+			// first position == bottom right
+			$('.sos-theme.content-image-txt li:eq(6)').find(who).css('background-image', 'url(' + $home_2x2_imageUrl[0] + '/blok_tl.jpg)');
+			$('.sos-theme.content-image-txt li:eq(7)').find(who).css('background-image', 'url(' + $home_2x2_imageUrl[0] + '/blok_tr.jpg)');
+			$('.sos-theme.content-image-txt li:eq(10)').find(who).css('background-image', 'url(' + $home_2x2_imageUrl[0] + '/blok_bl.jpg)');
+			$('.sos-theme.content-image-txt li:eq(11)').find(who).css('background-image', 'url(' + $home_2x2_imageUrl[0] + '/blok_br.jpg)');
+			for (var i = 0; i < 6; i++) {
+				$('.sos-theme.content-image-txt li:eq('+i+')').find(who).css('background-image', 'url(' + $home_imageUrl[i] + ')');
+			}
+			for (var i = 8; i < 10; i++) {
+				$('.sos-theme.content-image-txt li:eq('+i+')').find(who).css('background-image', 'url(' + $home_imageUrl[i] + ')');
+			}
+			// end first position == bottom right
+		}
+
+	}
+	/////////////////////
 	sos_home_rotate = function () {
+		clearInterval($timerStarter);
 		if ($dir == 'back'){
 			//console.log ('sos_home back');
-			sos_home_fill_divs_back();
+			//console.log ("rnd check 2x2 applied == " + rndCheck2x2(1) );
+
+			if ( rndCheck2x2(1) ) { // if true then set 2x2 in random location
+				//console.log ("rnd check 2x2 applied :: back");
+				sos_home_fill_divs_back_2x2();
+			} else {
+				sos_home_fill_divs_back();
+			}
+
 			$('.sos-theme.content-image-txt li').each(function() {
 				$(this).delay( rnddly(2000) ).queue(function(next){
 					$(this).addClass('flipped');
@@ -113,7 +263,14 @@ jQuery( document ).ready(function( $ ) {
 			$timer = setTimeout(sos_home_rotate, 5000);
 		} else {
 			//console.log ('sos_home front');
-			sos_home_fill_divs_front();
+
+			if ( rndCheck2x2(1) ) { // if true then set 2x2 in random location
+				//console.log ("rnd check 2x2 applied :: front");
+				sos_home_fill_divs_front_2x2();
+			} else {
+				sos_home_fill_divs_front();
+			}
+
 			$('.sos-theme.content-image-txt li').each(function() {
 				$(this).delay( rnddly(2000) ).queue(function(next){
 					$(this).removeClass('flipped');
@@ -129,9 +286,16 @@ jQuery( document ).ready(function( $ ) {
 		clearInterval($timerStarter);
 	};
 	$dir = 'back';
-	sos_home_fill_divs_front();
+	if ( rndCheck2x2(1) ) { // if true then set 2x2 in random location
+		//console.log ("rnd check 2x2 applied :: front");
+		sos_home_fill_divs_front_2x2();
+	} else {
+		sos_home_fill_divs_front();
+	}
 	$timerStarter = setTimeout(sos_home_rotate, 2000);
 	////////////////////////////////////////////////////////////////////////////////
+
+
 
 	client_load_images = function() {
 		var $i = 0;
@@ -157,7 +321,7 @@ jQuery( document ).ready(function( $ ) {
 			if ($j > 12) {
 				$j = $j - 12;
 			}
-			console.log ( 'the j numbers' + $j + ' who :: ' + $(this) );
+			//console.log ( 'the j numbers' + $j + ' who :: ' + $(this) );
 			client_fade_images( $(this), $j,  $(this).attr('data-color') );
 		});
 	};

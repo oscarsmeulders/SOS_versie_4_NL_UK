@@ -1,8 +1,8 @@
 <?php
 
 wp_enqueue_script('cycle_script', get_stylesheet_directory_uri() . '/js/jquery.cycle2.min.js', array('jquery', 'modernizr-min', 'tk-search-main'), false, true);
-wp_enqueue_script('global_script', get_stylesheet_directory_uri() . '/js/global.js', array('jquery', 'modernizr-min', 'tk-search-main'), false, true);
-wp_enqueue_script('os_script', get_stylesheet_directory_uri() . '/js/os.js', array('jquery', 'modernizr-min', 'tk-search-main','cycle_script'), false, true);
+wp_enqueue_script('global_script', get_stylesheet_directory_uri() . '/js/min/global-min.js', array('jquery', 'modernizr-min', 'tk-search-main'), false, true);
+wp_enqueue_script('os_script', get_stylesheet_directory_uri() . '/js/min/os-min.js', array('jquery', 'modernizr-min', 'tk-search-main','cycle_script'), false, true);
 
 
 

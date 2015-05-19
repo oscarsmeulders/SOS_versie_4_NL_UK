@@ -1,7 +1,9 @@
-
+<div id="awwwards" class="nominee white top right">
+<a href="http://www.awwwards.com" target="_blank">Awwwards</a>
+</div>
 <header>
 	<div class='wrap'>
-		<a data-target-id="oscar_smeulders" class="to-slide item" href="javascript:void(0)"><img class='logo' alt='Oscar Smeulders' src='<?= get_stylesheet_directory_uri(); ?>/img/logo.jpg'></a>
+		<a data-target-id="oscar_smeulders" class="to-slide" href="javascript:void(0);"><img class='logo' alt='Oscar Smeulders' src='<?= get_stylesheet_directory_uri(); ?>/img/logo.jpg'></a>
 		<nav>
 			<ul>
 				<li class='menu-item'>
